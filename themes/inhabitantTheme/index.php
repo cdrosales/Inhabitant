@@ -15,7 +15,7 @@ echo '<i class="fab fa-facebook-f"></i>';
         the_post();?> <!--singular not multiple -- THIS LOADS POST CONTENT***-->
 
     <h2><?php the_title(); ?></h2> <!--customizable to what you wanna grab ex URL can be grabbbed-->
-    <h3><?php the_permalink(); ?> <!-- shows the link of the post-->
+    <!-- <h3><?php the_permalink(); ?> shows the link of the post -->
     <?php the_content(); ?>
 
 
