@@ -8,9 +8,9 @@ const rename = require('gulp-rename');
 const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const terser = require('gulp-terser');
-​
+
 // Create basic Gulp tasks
-​
+
 gulp.task('sass', function() {
   return gulp
     .src('./sass/style.scss', { sourcemaps: true })
@@ -28,7 +28,7 @@ gulp.task('sass', function() {
     .pipe(sourcemaps.write('../maps'))
     .pipe(gulp.dest('./build/css'));
 });
-​
+
 gulp.task('lint', function() {
   return gulp
     .src(['./js/*.js'])
@@ -37,7 +37,7 @@ gulp.task('lint', function() {
     .pipe(eslint.format())
     .pipe(eslint.failAfterError());
 });
-​
+
 gulp.task(
   'scripts',
   gulp.series('lint', function() {
@@ -52,9 +52,9 @@ gulp.task(
       .pipe(gulp.dest('./build/js'));
   })
 );
-​
+
 // Set-up BrowserSync and watch
-​
+
 gulp.task('browser-sync', function() {
   const files = [
     './build/css/*.css',
@@ -62,19 +62,19 @@ gulp.task('browser-sync', function() {
     './*.php',
     './**/*.php'
   ];
-​
+
   browserSync.init(files, {
-    proxy: 'localhost:8888/inhabitantTheme'
+    proxy: 'localhost:8888/Inhabitant'
   });
-​
+
   gulp.watch(files).on('change', browserSync.stream);
   
 });
-​
+
 gulp.task('watch', function(done) {
   gulp.watch('js/*.js', gulp.series('scripts'));
   gulp.watch('sass/*.scss', gulp.series('sass'));
   done()
 });
-​
+
 gulp.task('default', gulp.parallel('browser-sync', 'watch'));
