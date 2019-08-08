@@ -22,12 +22,41 @@
 
     }
 
-add_action('wp_enqueue_scripts', 'inhabitant_files');//add stylesheet
+add_action('wp_enqueue_scripts', 'inhabitant_files');//add stylesheet // first parameter is most likely wordpress function ... second parameter is just the name we make for the function
+
+
 
 //Adds theme support - ex: title tag
 function inhabitant_features(){
-    add_theme_support('post-thumbnails');
-    add_theme_support ('title-tag'); // wordpress method
+    add_theme_support('post-thumbnails'); // title thumbnails
+    add_theme_support ('title-tag'); // wordpress method -- just adding Title Tag
+    register_nav_menus( array( // activates menu
+        'primary' => 'Primary Menu', // location => name of menu -- can be anyname
+        'footer' => 'Footer Menu'
+    ));
+    
 }
 add_action('after_setup_theme', 'inhabitant_features');
+
+
+//Initialize sidebbar widget
+
+function inhabitant_sidebar_widget(){
+    register_sidebar( array(
+        'name' => esc_html('Sidebar'), // any html invalid will script away -- takes out html tag
+        'id' => 'sidebar-1',
+        'description' => 'this is a sidebar',
+        'class' => 'side-bar',
+        'before_widget' => '<aside id="%1$s" class="%2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h2 class="widget-title">',
+        'after_title' => '</h2>'
+    ));
+}
+
+add_action('widgets_init', 'inhabitant_sidebar_widget');
+
+
+
+
 ?>

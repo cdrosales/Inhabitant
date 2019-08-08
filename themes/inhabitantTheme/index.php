@@ -9,7 +9,7 @@
     
 <?php if( have_posts() ): // have posts - checks if theres anypost available in your feed
 // The WordPress Loop: loads post content
-echo '<i class="fab fa-facebook-f"></i>';
+// echo '<i class="fab fa-facebook-f"></i>';
 
     while ( have_posts() ): // run as many times as many blog posts available?***
         the_post();?> <!--singular not multiple -- THIS LOADS POST CONTENT***-->

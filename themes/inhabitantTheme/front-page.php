@@ -12,12 +12,17 @@ echo '<i class="fab fa-facebook-f"></i>';
     <h2><?php the_title(); ?></h2> 
     <?php the_content(); ?>
 
-
     <?php endwhile; ?> 
+
 
     <?php the_posts_navigation(); ?> 
 <?php else : ?>
         <p>No posts found</p>
 <?php endif; ?>
+
+
+  <!-- calling in sidebar -->
+
+  <?php dynamic_sidebar('sidebar-1'); ?>
 
 <?php get_footer(); ?>

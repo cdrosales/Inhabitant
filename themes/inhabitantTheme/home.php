@@ -8,14 +8,15 @@
 echo '<h1>HOME.PHP</h1>';
 
 
-    while ( have_posts() ): 
-        the_post();?> 
+    while ( have_posts() ):   //runs the loop
+        the_post();?>   <!-- grab info to post -->
 
     <h2><?php the_title(); ?></h2> 
-    <?php the_content(); ?>
+    <?php the_content(); ?> 
+    <!-- grabbing the content -->
 
 
-    <?php endwhile; ?> 
+    <?php endwhile; ?>   <!-- loop ends -->
 
     <?php the_posts_navigation(); ?> 
 <?php else : ?>
