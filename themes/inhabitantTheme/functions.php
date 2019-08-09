@@ -18,7 +18,7 @@
     wp_enqueue_style('inhabitant_styles', get_stylesheet_uri('/build/css/style.min.css'), NULL, microtime()); // first parameter name of styleshee & second is the location
     // wp_enqueue_style('fonts', 'https://fonts.googleapis.com/css?family=Lato&display=swap');
     wp_enqueue_style('font-awesome', "https://use.fontawesome.com/releases/v5.8.1/css/all.css"); //font awesome site
-    wp_enqueue_style('fonts', get_stylesheet_uri('/fonts/Merriweather/*'), NULL, microtime()); // first parameter name of styleshee & second is the location
+    // wp_enqueue_style('fonts', get_stylesheet_uri('/fonts/Merriweather/*'), NULL, microtime()); // first parameter name of styleshee & second is the location
 
     }
 
@@ -54,9 +54,34 @@ function inhabitant_sidebar_widget(){
     ));
 }
 
+
+
+
 add_action('widgets_init', 'inhabitant_sidebar_widget');
 
 
+function inhabitant_login_logo() { ?>
+    <style type="text/css">
+        #login h1 a, .login h1 a {
+        background-image: url(<?php echo get_stylesheet_directory_uri(); ?>/assets/images/logos/inhabitent-logo-text-dark.svg);
+		background-size: 84px 84px;
+		background-repeat: no-repeat;
+        }
+    </style>
+<?php }
+add_action( 'login_enqueue_scripts', 'inhabitant_login_logo' );
+
+
+function inhabitant_login_logo_url(){
+    return home_url();
+}
+add_filter('login_headerurl', 'inhabitant_login_logo_url');
+
+
+function inhabitant_login_logo_url_title(){
+    return 'Inhabitant';
+}
+add_filter('login_title', 'inhabitant_login_logo_url_title');
 
 
 ?>
