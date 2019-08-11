@@ -1,7 +1,7 @@
 .journalTitle{
     position: absolute;
     z-index: 1;
-    padding-top: 50px;
+    padding-top: 60px;
 
         h2{
         font-family: 'Novecento Sans Web DemiBold';
@@ -10,15 +10,15 @@
         margin-left: 175px;
         font-size: 30px;
         text-transform: uppercase;
-        max-width: 550px;
+        max-width: 400px;
         line-height: 1.4;
         padding: 10px;
         }
-
 }
 
 .journalContent{
     color: $brand-baseFontColor;
+    padding: 20px 0;
         p{
             color: $brand-baseFontColor;
             line-height: $brand-lineHeight;

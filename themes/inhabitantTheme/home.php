@@ -8,6 +8,7 @@
 
     while ( have_posts() ):   //runs the loop
         the_post();?>   <!-- grab info to post -->
+    
 
     <div class="journalTitle">
         <h2><?php the_title(); ?></h2> 
@@ -15,7 +16,8 @@
     <div class="journalContent">
         <?php the_content(); ?> 
     </div>
-    <!-- grabbing the content -->
+
+
 
 
     <?php endwhile; ?>   <!-- loop ends -->

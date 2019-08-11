@@ -1,0 +1,24 @@
+.footerMainContainer{
+    font-size: $brand-baseFontSize;
+    padding-left: 175px;
+    display: flex;
+    justify-content: space-between;
+    width: 450px;
+    line-height: $brand-lineHeight;
+
+        .footerInhabitantInfo{
+            .socialMediaIcons{
+                width: 60px;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between
+            }
+        }
+}
+
+.copyright{
+    padding: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: $brand-baseFontSize;
+}
