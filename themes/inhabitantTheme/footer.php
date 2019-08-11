@@ -5,7 +5,6 @@
 ?>  <!-- will give admin pannel & script tags will be loaded here  -->
 
 
-
 <ul class="footerInhabitantInfo">
     <li>Contact Info</li>
     <li>Info@inhabitant.com</li>

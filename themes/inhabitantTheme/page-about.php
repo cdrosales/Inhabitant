@@ -14,7 +14,7 @@ echo '<h1>PAGE-ABOUT.PHP</h1>';
         <h2><?php the_title(); ?></h2> 
     </div>
 
-    <div class="about Content">
+    <div class="aboutContent">
         <?php the_content(); ?>
     </div>
 
