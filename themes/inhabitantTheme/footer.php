@@ -24,8 +24,7 @@
             <li>Sunday: Closed</li>
         </ul>
     </div>
-
-
+    
     <p class="copyright">Copyright © 2019 Inhabitant</p>
 
 </footer>

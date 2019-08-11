@@ -10,9 +10,7 @@ footer{
     .footerMainContainer{
         width: 100%;
         font-size: $brand-baseFontSize;
-        padding-left: 175px;
-        padding-top: 20px;
-
+        padding: 40px 40px;
         display: flex;
         justify-content: space-between;
         width: 450px;
@@ -22,7 +20,13 @@ footer{
                 color: $brand-white;
                 
                 li{
-                    font-family: 'Merriweather Web Light';  
+                    font-family: 'Merriweather Web Light'; 
+                    text-transform: lowercase;
+
+
+                    i{
+                        padding-right: 4px;
+                    }
                 }
                     .socialMediaIcons{
                     color: $brand-white;
@@ -41,7 +45,7 @@ footer{
 
     .copyright{
         color: $brand-white;
-        padding: 25px;
+        padding: 30px;
         text-align: center;
         text-transform: uppercase;
         font-size: $brand-baseFontSize;

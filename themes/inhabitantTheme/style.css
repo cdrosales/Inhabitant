@@ -127,8 +127,7 @@ footer {
   footer .footerMainContainer {
     width: 100%;
     font-size: 16px;
-    padding-left: 175px;
-    padding-top: 20px;
+    padding: 40px 40px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -140,7 +139,10 @@ footer {
     footer .footerMainContainer .footerInhabitantInfo {
       color: #ffffff; }
       footer .footerMainContainer .footerInhabitantInfo li {
-        font-family: 'Merriweather Web Light'; }
+        font-family: 'Merriweather Web Light';
+        text-transform: lowercase; }
+        footer .footerMainContainer .footerInhabitantInfo li i {
+          padding-right: 4px; }
       footer .footerMainContainer .footerInhabitantInfo .socialMediaIcons {
         color: #ffffff;
         width: 60px;
@@ -159,7 +161,7 @@ footer {
       text-transform: lowercase; }
   footer .copyright {
     color: #ffffff;
-    padding: 25px;
+    padding: 30px;
     text-align: center;
     text-transform: uppercase;
     font-size: 16px; }
@@ -178,6 +180,21 @@ footer {
     max-width: 400px;
     line-height: 1.4;
     padding: 10px; }
+  .journalTitle .postData {
+    position: absolute;
+    right: 0;
+    left: 600px;
+    top: 509px;
+    z-index: 1;
+    font-family: 'Novecento Sans Web DemiBold';
+    color: #ffffff;
+    background-color: #248A83;
+    font-size: 16px;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 10px;
+    width: 325px;
+    text-align: center; }
 
 .journalContent {
   color: #404040;
@@ -191,6 +208,7 @@ footer {
   .journalContent img {
     position: relative;
     width: 770px;
+    height: 515px;
     padding: 10px 175px; }
 
 .wp-image-46 {
@@ -208,20 +226,21 @@ footer {
   top: 520px;
   left: 480px; }
 
-.aboutContent h2 {
-  text-align: center;
-  font-family: 'Novecento Sans Web DemiBold';
-  text-transform: uppercase;
-  font-size: 26px;
-  padding: 15px 0;
-  color: #404040; }
-
-.aboutContent p {
-  font-family: 'Merriweather Web Light';
-  padding: 15px 160px;
-  line-height: 1.75;
-  font-size: 16px;
-  color: #404040; }
+.aboutContent {
+  padding-bottom: 40px; }
+  .aboutContent h2 {
+    text-align: center;
+    font-family: 'Novecento Sans Web DemiBold';
+    text-transform: uppercase;
+    font-size: 26px;
+    padding: 15px 0;
+    color: #404040; }
+  .aboutContent p {
+    font-family: 'Merriweather Web Light';
+    padding: 15px 160px;
+    line-height: 1.75;
+    font-size: 16px;
+    color: #404040; }
 
 html {
   width: 1120px; }

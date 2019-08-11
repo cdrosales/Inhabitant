@@ -12,20 +12,23 @@
 
     <div class="journalTitle">
         <h2><?php the_title(); ?></h2> 
+
+        <div class="postData">
+            <p>
+                <span class="postDate"><?php echo date("d F Y"); ?></span>
+                /
+                <span class="postComments"><?php echo get_comments(); ?></span>        
+                / by
+                <span class="postAuthor"><?php echo get_the_author(); ?></span>
+            </p>
+    </div>
+
     </div>
     <div class="journalContent">
         <?php the_content(); ?> 
     </div>
 
-    <div class="postdData">
-    <p>
-        <span class="postDate"><?php echo date("d F Y"); ?></span>
-        /
-        <span class="postComments"><?php echo get_comments(); ?></span>        
-        / by
-        <span class="postAuthor"><?php echo get_the_author(); ?></span>
-    </p>
-    </div>
+
 
 
 
