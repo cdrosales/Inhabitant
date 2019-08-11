@@ -3,12 +3,9 @@
 <!-- <h1><?php bloginfo('name'); ?></h1> -->
 
     
-<!-- <?php if( have_posts() ): 
-echo '<h1>PAGE-ABOUT.PHP</h1>';
-
-
+<?php if( have_posts() ): 
     while ( have_posts() ): 
-        the_post();?>  -->
+        the_post();?>  
 
     <div class ="aboutTitle">
         <h2><?php the_title(); ?></h2> 
@@ -19,11 +16,11 @@ echo '<h1>PAGE-ABOUT.PHP</h1>';
     </div>
 
 
-    <!-- <?php endwhile; ?>  -->
+    <?php endwhile; ?> 
 
-    <!-- <?php the_posts_navigation(); ?> 
+    <?php the_posts_navigation(); ?> 
 <?php else : ?>
         <p>No posts found</p>
-<?php endif; ?> -->
+<?php endif; ?>
 
 <?php get_footer(); ?>
