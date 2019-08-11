@@ -1,24 +1,49 @@
-.footerMainContainer{
-    font-size: $brand-baseFontSize;
-    padding-left: 175px;
-    display: flex;
-    justify-content: space-between;
-    width: 450px;
-    line-height: $brand-lineHeight;
-
-        .footerInhabitantInfo{
-            .socialMediaIcons{
-                width: 60px;
-                display: flex;
-                flex-direction: row;
-                justify-content: space-between
-            }
-        }
+h3 {
+    color: $brand-orange;
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web DemiBold';
 }
 
-.copyright{
-    padding: 25px;
-    text-align: center;
-    text-transform: uppercase;
-    font-size: $brand-baseFontSize;
+footer{
+    background: url("assets/images/dark-wood.png");
+
+    .footerMainContainer{
+        width: 100%;
+        font-size: $brand-baseFontSize;
+        padding-left: 175px;
+        padding-top: 20px;
+
+        display: flex;
+        justify-content: space-between;
+        width: 450px;
+        line-height: $brand-lineHeight;
+
+            .footerInhabitantInfo{
+                color: $brand-white;
+                
+                li{
+                    font-family: 'Merriweather Web Light';  
+                }
+                    .socialMediaIcons{
+                    color: $brand-white;
+                        width: 60px;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                    }
+            }
+
+            .footerHours{
+            color: $brand-white;
+            text-transform: lowercase;
+            }
+    }
+
+    .copyright{
+        color: $brand-white;
+        padding: 25px;
+        text-align: center;
+        text-transform: uppercase;
+        font-size: $brand-baseFontSize;
+    }
 }

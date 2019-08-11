@@ -1,0 +1,16 @@
+.nav{
+    padding: 10px;
+        .menu{
+        text-transform: uppercase;
+        display:flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 400px;
+
+            li{
+                a{
+                    text-decoration: none;
+                }
+            }
+        }
+}

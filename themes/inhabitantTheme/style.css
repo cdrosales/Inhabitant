@@ -99,19 +99,10 @@ table {
 body {
   font-family: 'Novecento Sans Web'; }
 
-.footerMainContainer {
-  font-size: 16px;
-  padding-left: 175px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 450px;
-  line-height: 1.75; }
-  .footerMainContainer .footerInhabitantInfo .socialMediaIcons {
-    width: 60px;
+.nav {
+  padding: 10px; }
+  .nav .menu {
+    text-transform: uppercase;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -121,13 +112,57 @@ body {
             flex-direction: row;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    width: 400px; }
+    .nav .menu li a {
+      text-decoration: none; }
 
-.copyright {
-  padding: 25px;
-  text-align: center;
+h3 {
+  color: #d99054;
   text-transform: uppercase;
-  font-size: 16px; }
+  font-family: 'Novecento Sans Web DemiBold'; }
+
+footer {
+  background: url("assets/images/dark-wood.png"); }
+  footer .footerMainContainer {
+    width: 100%;
+    font-size: 16px;
+    padding-left: 175px;
+    padding-top: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 450px;
+    line-height: 1.75; }
+    footer .footerMainContainer .footerInhabitantInfo {
+      color: #ffffff; }
+      footer .footerMainContainer .footerInhabitantInfo li {
+        font-family: 'Merriweather Web Light'; }
+      footer .footerMainContainer .footerInhabitantInfo .socialMediaIcons {
+        color: #ffffff;
+        width: 60px;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: row;
+                flex-direction: row;
+        -webkit-box-pack: justify;
+            -ms-flex-pack: justify;
+                justify-content: space-between; }
+    footer .footerMainContainer .footerHours {
+      color: #ffffff;
+      text-transform: lowercase; }
+  footer .copyright {
+    color: #ffffff;
+    padding: 25px;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 16px; }
 
 .journalTitle {
   position: absolute;
