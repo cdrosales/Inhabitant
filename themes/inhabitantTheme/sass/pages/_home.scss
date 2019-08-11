@@ -1,0 +1,35 @@
+.journalTitle{
+    position: absolute;
+    z-index: 1;
+    padding-top: 50px;
+
+        h2{
+        font-family: 'Novecento Sans Web DemiBold';
+        color: $brand-white;
+        background-color: $brand-green;
+        margin-left: 175px;
+        font-size: 30px;
+        text-transform: uppercase;
+        max-width: 550px;
+        line-height: 1.4;
+        padding: 10px;
+        }
+
+}
+
+.journalContent{
+    color: $brand-baseFontColor;
+        p{
+            color: $brand-baseFontColor;
+            line-height: $brand-lineHeight;
+            font-family: 'Merriweather Web Light';
+            font-size: $brand-baseFontSize;
+            padding: 10px 175px;
+        }
+
+        img{
+            position: relative;
+            width: 770px;
+            padding: 10px 175px;
+        }
+}

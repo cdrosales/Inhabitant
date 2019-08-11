@@ -99,6 +99,34 @@ table {
 body {
   font-family: 'Novecento Sans Web'; }
 
+.journalTitle {
+  position: absolute;
+  z-index: 1;
+  padding-top: 50px; }
+  .journalTitle h2 {
+    font-family: 'Novecento Sans Web DemiBold';
+    color: #ffffff;
+    background-color: #248A83;
+    margin-left: 175px;
+    font-size: 30px;
+    text-transform: uppercase;
+    max-width: 550px;
+    line-height: 1.4;
+    padding: 10px; }
+
+.journalContent {
+  color: #404040; }
+  .journalContent p {
+    color: #404040;
+    line-height: 1.75;
+    font-family: 'Merriweather Web Light';
+    font-size: 16px;
+    padding: 10px 175px; }
+  .journalContent img {
+    position: relative;
+    width: 770px;
+    padding: 10px 175px; }
+
 .wp-image-46 {
   width: 100%;
   position: relative;
