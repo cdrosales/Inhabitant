@@ -21,15 +21,12 @@
                 / by
                 <span class="postAuthor"><?php echo get_the_author(); ?></span>
             </p>
+        </div>
     </div>
-
-    </div>
+    
     <div class="journalContent">
         <?php the_content(); ?> 
     </div>
-
-
-
 
 
     <?php endwhile; ?>   <!-- loop ends -->

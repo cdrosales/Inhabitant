@@ -100,7 +100,8 @@ body {
   font-family: 'Novecento Sans Web'; }
 
 .nav {
-  padding: 10px 40px; }
+  padding: 10px 30px;
+  height: 20px; }
   .nav .menu {
     text-transform: uppercase;
     display: -webkit-box;
@@ -150,7 +151,7 @@ footer {
         footer .footerMainContainer .footerContainer .footerInhabitantInfo li {
           font-family: 'Merriweather Web Light';
           text-transform: lowercase;
-          padding-right: 30px; }
+          padding-right: 3px; }
           footer .footerMainContainer .footerContainer .footerInhabitantInfo li i {
             padding-right: 4px; }
         footer .footerMainContainer .footerContainer .footerInhabitantInfo .socialMediaIcons {
@@ -167,6 +168,7 @@ footer {
               -ms-flex-pack: justify;
                   justify-content: space-between; }
       footer .footerMainContainer .footerContainer .footerHours {
+        padding-left: 30px;
         color: #ffffff;
         text-transform: lowercase; }
     footer .footerMainContainer .footerLogo {
