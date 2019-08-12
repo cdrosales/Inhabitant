@@ -23,6 +23,5 @@ echo '<i class="fab fa-facebook-f"></i>';
 
   <!-- calling in sidebar -->
 
-  <?php dynamic_sidebar('sidebar-1'); ?>
 
 <?php get_footer(); ?>

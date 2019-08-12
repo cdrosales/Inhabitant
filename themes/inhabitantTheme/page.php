@@ -1,16 +1,14 @@
 <?php get_header(); ?> <!-- dont need include syntax for wordpress -->
 
-<h1><?php bloginfo('name'); ?></h1>
+<div class="sidebar">
+        <?php dynamic_sidebar('sidebar-1'); ?>
+        </div>
 
-<!-- locate blog post and grab few key points via THE LOOP-->
-<!-- the while loop is the MAIN component -->
-    
 <?php if( have_posts() ): // have posts - checks if theres anypost available in your feed
-// The WordPress Loop: loads post content
     while ( have_posts() ): // run as many times as many blog posts available?***
         the_post();?> <!--singular not multiple -- THIS LOADS POST CONTENT***-->
 
-    <h2><?php the_title(); ?></h2> <!--customizable to what you wanna grab ex URL can be grabbbed-->
+    <!-- <h2><?php the_title(); ?></h2>  -->
     <?php the_content(); ?>
 
 
