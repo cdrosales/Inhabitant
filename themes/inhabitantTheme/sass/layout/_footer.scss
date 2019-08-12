@@ -8,13 +8,18 @@ footer{
     background: url("assets/images/dark-wood.png");
 
     .footerMainContainer{
-        width: 100%;
+        // width: 100%;
         font-size: $brand-baseFontSize;
         padding: 40px 40px;
         display: flex;
         justify-content: space-between;
-        width: 450px;
+        // width: 450px;
         line-height: $brand-lineHeight;
+
+        .footerContainer{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
 
             .footerInhabitantInfo{
                 color: $brand-white;
@@ -22,7 +27,7 @@ footer{
                 li{
                     font-family: 'Merriweather Web Light'; 
                     text-transform: lowercase;
-
+                    padding-right: 30px;
 
                     i{
                         padding-right: 4px;
@@ -36,11 +41,16 @@ footer{
                         justify-content: space-between;
                     }
             }
-
             .footerHours{
             color: $brand-white;
             text-transform: lowercase;
             }
+        }
+        .footerLogo{
+            width: 200px;
+            height: 112px;
+            margin-top: -30px;
+        }
     }
 
     .copyright{

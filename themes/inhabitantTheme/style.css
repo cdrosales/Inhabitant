@@ -100,7 +100,7 @@ body {
   font-family: 'Novecento Sans Web'; }
 
 .nav {
-  padding: 10px; }
+  padding: 10px 40px; }
   .nav .menu {
     text-transform: uppercase;
     display: -webkit-box;
@@ -125,7 +125,6 @@ h3 {
 footer {
   background: url("assets/images/dark-wood.png"); }
   footer .footerMainContainer {
-    width: 100%;
     font-size: 16px;
     padding: 40px 40px;
     display: -webkit-box;
@@ -134,31 +133,46 @@ footer {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 450px;
     line-height: 1.75; }
-    footer .footerMainContainer .footerInhabitantInfo {
-      color: #ffffff; }
-      footer .footerMainContainer .footerInhabitantInfo li {
-        font-family: 'Merriweather Web Light';
-        text-transform: lowercase; }
-        footer .footerMainContainer .footerInhabitantInfo li i {
-          padding-right: 4px; }
-      footer .footerMainContainer .footerInhabitantInfo .socialMediaIcons {
+    footer .footerMainContainer .footerContainer {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      footer .footerMainContainer .footerContainer .footerInhabitantInfo {
+        color: #ffffff; }
+        footer .footerMainContainer .footerContainer .footerInhabitantInfo li {
+          font-family: 'Merriweather Web Light';
+          text-transform: lowercase;
+          padding-right: 30px; }
+          footer .footerMainContainer .footerContainer .footerInhabitantInfo li i {
+            padding-right: 4px; }
+        footer .footerMainContainer .footerContainer .footerInhabitantInfo .socialMediaIcons {
+          color: #ffffff;
+          width: 60px;
+          display: -webkit-box;
+          display: -ms-flexbox;
+          display: flex;
+          -webkit-box-orient: horizontal;
+          -webkit-box-direction: normal;
+              -ms-flex-direction: row;
+                  flex-direction: row;
+          -webkit-box-pack: justify;
+              -ms-flex-pack: justify;
+                  justify-content: space-between; }
+      footer .footerMainContainer .footerContainer .footerHours {
         color: #ffffff;
-        width: 60px;
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex;
-        -webkit-box-orient: horizontal;
-        -webkit-box-direction: normal;
-            -ms-flex-direction: row;
-                flex-direction: row;
-        -webkit-box-pack: justify;
-            -ms-flex-pack: justify;
-                justify-content: space-between; }
-    footer .footerMainContainer .footerHours {
-      color: #ffffff;
-      text-transform: lowercase; }
+        text-transform: lowercase; }
+    footer .footerMainContainer .footerLogo {
+      width: 200px;
+      height: 112px;
+      margin-top: -30px; }
   footer .copyright {
     color: #ffffff;
     padding: 30px;
