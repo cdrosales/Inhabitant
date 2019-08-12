@@ -115,7 +115,7 @@ function inhabitant_post_types(){
 add_action('init', 'inhabitant_post_types');
 
 
-// Custom Taxonomies
+// Custom Taxonomies (categories)
 
 function inhabitant_register_taxonomies(){
     register_taxonomy('product-type', 'products', array(

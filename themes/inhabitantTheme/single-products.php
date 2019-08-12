@@ -11,12 +11,10 @@
 
     <h2><?php the_title(); ?></h2> <!--customizable to what you wanna grab ex URL can be grabbbed-->
    <!-- <?php the_post_thumbnail(); ?> -->
-   <?php the_permalink(); ?>
+   <!-- <?php the_permalink(); ?> -->
    
     <?php echo '$' . get_field('price'); ?> 
   <!--  echo out the $ with price from custom fields in wordpress -->
-
-
 
 
 
