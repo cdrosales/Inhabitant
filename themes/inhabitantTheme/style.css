@@ -137,7 +137,7 @@ body {
 
 .productsContainer {
   border-top: 1px dashed #a1a1a1;
-  padding: 20px;
+  padding: 50px 20px;
   display: grid;
   grid-gap: 25px;
   grid-template-columns: repeat(4, minmax(250px, 250px));
@@ -376,30 +376,39 @@ footer {
   font-size: 44px;
   font-family: 'Novecento Sans Web DemiBold';
   z-index: 1;
-  top: 295px;
-  left: 480px;
+  top: 95%;
+  left: 42.5%;
   text-transform: uppercase; }
+
+.homeLogo {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: calc(50% - 137.5px); }
 
 .aboutContent {
   padding-bottom: 40px; }
   .aboutContent .heroWrapper {
-    margin-top: -225px;
+    margin-top: -50px;
     background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.25)), to(rgba(0, 0, 0, 0.25)));
     background: linear-gradient(rgba(0, 0, 0, 0.25) 0%, rgba(0, 0, 0, 0.25) 100%);
     height: 745px; }
-    .aboutContent .heroWrapper .wp-post-image {
+    .aboutContent .heroWrapper img {
       width: 100%;
       height: 745px;
       position: relative;
       -o-object-fit: cover;
          object-fit: cover;
-      z-index: -1; }
+      -o-object-position: center;
+         object-position: center;
+      z-index: -1;
+      overflow: hidden; }
   .aboutContent h2 {
     text-align: center;
     font-family: 'Novecento Sans Web DemiBold';
     text-transform: uppercase;
     font-size: 26px;
-    padding: 15px 0;
+    padding: 30px 0;
     color: #404040; }
   .aboutContent p {
     font-family: 'Merriweather Web Light';
@@ -429,12 +438,12 @@ footer {
   font-family: 'Novecento Sans Web DemiBold';
   text-transform: uppercase;
   text-align: center;
-  padding: 40px 0;
+  padding-top: 40px;
   letter-spacing: 2px;
   color: #404040; }
 
 .productsCategory {
-  padding-bottom: 30px; }
+  padding: 30px 0; }
   .productsCategory .menu-product-types-container {
     display: -webkit-box;
     display: -ms-flexbox;

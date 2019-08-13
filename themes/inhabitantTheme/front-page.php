@@ -1,16 +1,25 @@
 <?php get_header(); ?> 
 
-<h1><?php bloginfo('name'); ?></h1>
-
-    
 <?php if( have_posts() ): 
-echo '<i class="fab fa-facebook-f"></i>';
 
     while ( have_posts() ): 
         the_post();?> 
 
-    <h2><?php the_title(); ?></h2> 
-    <?php the_content(); ?>
+ 
+    <div class="aboutContent">
+
+    <div class="heroWrapper">
+        <div class="heroImage">
+        <?php the_post_thumbnail(); ?>
+        </div>
+    </div>
+    
+    <img src="<?php echo get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-full.svg'; ?>" class="homeLogo" />
+    
+
+        <?php the_content(); ?>
+</div>
+
 
     <?php endwhile; ?> 
 
