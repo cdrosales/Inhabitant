@@ -338,6 +338,35 @@ footer {
     margin-bottom: 50px;
     border: none; }
 
+.singleProducts {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding: 40px 50px; }
+  .singleProducts .singleProductThumbnail img {
+    width: 400px;
+    height: 350px;
+    padding-right: 40px; }
+  .singleProducts .singleProductInfo .singleProductTitle {
+    font-size: 35px;
+    color: #d99054;
+    font-family: 'Novecento Sans Web DemiBold';
+    text-transform: uppercase;
+    padding-bottom: 20px; }
+  .singleProducts .singleProductInfo .singleProductPrice {
+    padding-bottom: 20px;
+    font-size: 25px; }
+  .singleProducts .singleProductInfo p {
+    font-size: 16px;
+    font-family: 'Merriweather Web Light';
+    line-height: 1.75;
+    padding-bottom: 20px;
+    width: 520px; }
+
 html {
   width: 1120px; }
 

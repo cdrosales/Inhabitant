@@ -1,8 +1,5 @@
 <?php get_header(); ?> 
-
-    <!-- <h1><?php bloginfo('name'); ?></h1> -->
-
-    
+  
     <section>
 
         <main>

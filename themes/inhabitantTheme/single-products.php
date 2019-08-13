@@ -1,20 +1,35 @@
 <?php get_header(); ?> <!-- dont need include syntax for wordpress -->
 
-<h1><?php bloginfo('name'); ?></h1>
+<!-- <h1><?php bloginfo('name'); ?></h1> -->
 
+<div class="singleProducts">
 
-<?php if( have_posts() ): // have posts - checks if theres anypost available in your feed
-
-
+    <?php if( have_posts() ): // have posts - checks if theres anypost available in your feed
     while ( have_posts() ): // run as many times as many blog posts available?***
         the_post();?> <!--singular not multiple -- THIS LOADS POST CONTENT***-->
 
-    <h2><?php the_title(); ?></h2> <!--customizable to what you wanna grab ex URL can be grabbbed-->
-   <!-- <?php the_post_thumbnail(); ?> -->
-   <!-- <?php the_permalink(); ?> -->
-   
-    <?php echo '$' . get_field('price'); ?> 
-  <!--  echo out the $ with price from custom fields in wordpress -->
+
+    <div class="singleProductThumbnail">
+    <?php the_post_thumbnail(); ?>
+    </div>
+
+    <div class="singleProductInfo">
+
+        <div class="singleProductTitle">
+          <?php the_title(); ?>
+          </div> 
+
+        <div class="singleProductPrice">
+        <?php echo '$' . get_field('price'); ?> 
+        </div>
+
+        <div class="singleProductContainer">
+        <?php the_content(); ?> 
+        </div>
+    </div>
+
+ </div>
+
 
 
 

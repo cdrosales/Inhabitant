@@ -1,0 +1,41 @@
+.singleProducts{
+    display: flex;
+    flex-direction: row;
+    padding: 40px 50px;
+
+    .singleProductThumbnail{
+
+        img{
+        width: 400px;
+        height: 350px;
+        padding-right: 40px;
+        }
+    }
+
+    .singleProductInfo{
+        
+        .singleProductTitle{
+            font-size: 35px;;
+            color: $brand-orange;
+            font-family: 'Novecento Sans Web DemiBold';
+            text-transform: uppercase;
+            padding-bottom: 20px;
+        }
+
+        .singleProductPrice{
+            padding-bottom: 20px;
+            font-size: 25px;
+        }
+
+        p{
+            font-size: $brand-baseFontSize;
+            font-family: 'Merriweather Web Light';
+            line-height: $brand-lineHeight;
+            padding-bottom: 20px;
+            width: 520px;
+
+
+        }
+    }
+
+}
