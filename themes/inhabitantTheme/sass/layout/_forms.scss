@@ -1,0 +1,32 @@
+.contactContent{
+    .wpcf7-form{
+        label{
+        font-family: 'Novecento Sans Web';
+        text-transform: uppercase;
+
+            .wpcf7-form-control{
+                background-color: $brand-lightGrey;
+                opacity: 0.1; 
+                border-color: black;
+                border-width: 1px;
+                width: 350px;
+                height: 30px;
+            }
+            .wpcf7-textarea{
+                height: 250px;
+                width: 750px;
+            }
+            
+        }
+    }
+    .wpcf7-submit{
+        background-color: $brand-green;
+        padding: 7px 15px;
+        color: $brand-white;
+        text-transform: uppercase;
+        font-family: 'Novecento Sans Web';
+        margin-bottom: 50px;
+        border: none;
+        
+    }
+}

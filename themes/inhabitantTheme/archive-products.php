@@ -11,31 +11,20 @@
     while ( have_posts() ): // run as many times as many blog posts available?***
         the_post();?> <!--singular not multiple -- THIS LOADS POST CONTENT***-->
 
-    <h2><?php the_title(); ?></h2> 
+<div class="productsContainer">
 
-    <!-- customizable to what you wanna grab ex URL can be grabbbed -->
-   <!-- <?php the_post_thumbnail(); ?> -->
-   <!-- <?php the_permalink(); ?> -->
+    <div class="productsThumbnail">
+      <?php the_post_thumbnail('medium'); ?>
+    </div>
 
-<?php if ( has_post_thumbnail() ) : ?>
-
-<!-- <?php the_post_thumbnail(); ?> -->
-<?php endif; ?>
-
-<!-- <?php the_content(); ?>  -->
-
- 
-    <?php echo '$' . get_field('price'); ?> 
-  <!--  echo out the $ with price from custom fields in wordpress -->
-
-
-
+    <div class="productsInfo">
+        <?php echo the_title() . '............$' . get_field('price'); ?> 
+    </div>
+    
+</div>
 
 
     <?php endwhile; ?> <!--Loop ENDS-->
-
-    <!-- <?php the_posts_navigation(); ?> -->
-     <!--only if we have way more content than shown on page-->
 
 <?php else : ?>
         <p>No posts found</p>
