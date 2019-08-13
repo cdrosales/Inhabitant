@@ -18,7 +18,7 @@
     </div>
 
     <div class="productsInfo">
-        <?php echo the_title() . '............$' . get_field('price'); ?> 
+        <?php echo the_title() . '.........$' . get_field('price'); ?> 
     </div>
     </div>
     
