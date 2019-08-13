@@ -1,50 +1,55 @@
-.sidebar {
-    width: 225px;
-    // height: 100%;
-    padding: 30px 30px 0 30px;
-    
-    aside{
-    padding-bottom: 20px;
+.sidebarContent{ 
+
+    .sidebar {
+        width: 225px;
+        // height: 100%;
+        padding: 30px 30px 0 30px;
         
-        .textwidget{
-        font-family: 'Merriweather Web Light';
+        
+        aside{
         padding-bottom: 20px;
+        
+            
+            .textwidget{
+            font-family: 'Merriweather Web Light';
+            padding-bottom: 20px;
 
-                ul{
-                    li{
-                    display: flex;
-                    flex-direction: row;
-                    padding: 5px 0;
+                    ul{
+                        li{
+                        display: flex;
+                        flex-direction: row;
+                        padding: 5px 0;
 
-                        i{
-                        padding-right: 10px;
-                        padding-top: 5px;
-                        }
-                        p{
-                        line-height: $brand-lineHeight;
-                        }
-                        .sidebarNumber, .sidebarEmail{
-                            color: $brand-green;
+                            i{
+                            padding-right: 10px;
+                            padding-top: 5px;
+                            }
+                            p{
+                            line-height: $brand-lineHeight;
+                            }
+                            .sidebarNumber, .sidebarEmail{
+                                color: $brand-green;
+                            }
                         }
                     }
-                }
-        }
-  
+            }
+    
 
-        h2{
-        font-family: 'Novecento Sans Web DemiBold'; 
-        font-size: 20px;
-        text-transform: uppercase;
-        padding-bottom: 15px;  
-        letter-spacing: 2px;     
-        }
+            h2{
+            font-family: 'Novecento Sans Web DemiBold'; 
+            font-size: 20px;
+            text-transform: uppercase;
+            padding-bottom: 15px;  
+            letter-spacing: 2px;     
+            }
 
-        a {
-        font-family: 'Merriweather Web Light';
-        line-height: $brand-lineHeight;
-        color: $brand-green;
-        text-decoration: none;
+            a {
+            font-family: 'Merriweather Web Light';
+            line-height: $brand-lineHeight;
+            color: $brand-green;
+            text-decoration: none;
+            }
+            
         }
-        
     }
 }

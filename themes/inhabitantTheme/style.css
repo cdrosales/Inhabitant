@@ -99,22 +99,24 @@ table {
 body {
   font-family: 'Novecento Sans Web'; }
 
-.nav .menu {
-  margin: 10px 30px;
-  text-transform: uppercase;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  width: 400px; }
-  .nav .menu li a {
-    text-decoration: none; }
+.nav {
+  border-bottom: 1px solid #e1e1e1; }
+  .nav .menu {
+    margin: 10px 30px;
+    text-transform: uppercase;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 400px; }
+    .nav .menu li a {
+      text-decoration: none; }
 
 h3 {
   color: #d99054;
@@ -180,15 +182,15 @@ footer {
     text-transform: uppercase;
     font-size: 16px; }
 
-.sidebar {
+.sidebarContent .sidebar {
   width: 225px;
   padding: 30px 30px 0 30px; }
-  .sidebar aside {
+  .sidebarContent .sidebar aside {
     padding-bottom: 20px; }
-    .sidebar aside .textwidget {
+    .sidebarContent .sidebar aside .textwidget {
       font-family: 'Merriweather Web Light';
       padding-bottom: 20px; }
-      .sidebar aside .textwidget ul li {
+      .sidebarContent .sidebar aside .textwidget ul li {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -197,33 +199,24 @@ footer {
             -ms-flex-direction: row;
                 flex-direction: row;
         padding: 5px 0; }
-        .sidebar aside .textwidget ul li i {
+        .sidebarContent .sidebar aside .textwidget ul li i {
           padding-right: 10px;
           padding-top: 5px; }
-        .sidebar aside .textwidget ul li p {
+        .sidebarContent .sidebar aside .textwidget ul li p {
           line-height: 1.75; }
-        .sidebar aside .textwidget ul li .sidebarNumber, .sidebar aside .textwidget ul li .sidebarEmail {
+        .sidebarContent .sidebar aside .textwidget ul li .sidebarNumber, .sidebarContent .sidebar aside .textwidget ul li .sidebarEmail {
           color: #248A83; }
-    .sidebar aside h2 {
+    .sidebarContent .sidebar aside h2 {
       font-family: 'Novecento Sans Web DemiBold';
       font-size: 20px;
       text-transform: uppercase;
       padding-bottom: 15px;
       letter-spacing: 2px; }
-    .sidebar aside a {
+    .sidebarContent .sidebar aside a {
       font-family: 'Merriweather Web Light';
       line-height: 1.75;
       color: #248A83;
       text-decoration: none; }
-
-.journalContainer {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse; }
 
 .journalTitle {
   position: absolute;
@@ -308,5 +301,55 @@ footer {
     font-size: 16px;
     color: #404040; }
 
+.contactContent {
+  padding: 30px 35px; }
+  .contactContent .inhabitantMap {
+    width: 750px;
+    padding: 20px 0; }
+  .contactContent h2 {
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web DemiBold';
+    font-size: 26px;
+    padding-bottom: 20px; }
+  .contactContent p {
+    font-family: 'Merriweather Web Light';
+    line-height: 1.75;
+    font-size: 16px;
+    padding: 10px 0; }
+  .contactContent .wpcf7-form label {
+    font-family: 'Novecento Sans Web';
+    text-transform: uppercase; }
+    .contactContent .wpcf7-form label .wpcf7-form-control {
+      background-color: #a1a1a1;
+      opacity: 0.1;
+      border-color: black;
+      border-width: 1px;
+      width: 350px;
+      height: 30px; }
+    .contactContent .wpcf7-form label .wpcf7-textarea {
+      height: 250px;
+      width: 750px; }
+  .contactContent .wpcf7-submit {
+    background-color: #248A83;
+    padding: 7px 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web';
+    margin-bottom: 50px;
+    border: none; }
+
 html {
   width: 1120px; }
+
+main {
+  border-right: 1px solid #c8c8c8;
+  width: 835px; }
+
+section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row; }

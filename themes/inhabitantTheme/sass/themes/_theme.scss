@@ -1,3 +1,14 @@
 html {
     width: 1120px;
 }
+
+main{
+    border-right: 1px solid #c8c8c8;
+    width: 835px;
+}
+
+
+section {
+    display: flex;
+    flex-direction: row;
+}

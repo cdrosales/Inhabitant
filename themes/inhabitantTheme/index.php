@@ -1,6 +1,6 @@
 <?php get_header(); ?> <!-- dont need include syntax for wordpress -->
 
-<h1><?php bloginfo('name'); ?></h1>
+<!-- <h1><?php bloginfo('name'); ?></h1> -->
 
 
 

@@ -1,10 +1,21 @@
 <?php get_header(); ?> <!-- dont need include syntax for wordpress -->
 
 
-<div class="sidebar">
-        <?php dynamic_sidebar('sidebar-1'); ?>
-</div>
+<section>
+    <main>
+        <h1> Oops! That page can't be found. </h1>
+    </main>
 
-<h1> You Landed on a broken page </h1>
+
+    <div class="sidebarContent">
+
+        <div class="sidebar">
+        <?php dynamic_sidebar('sidebar-1'); ?>
+        </div>
+    </div>
+
+
+</section>
+
 
 <?php get_footer(); ?>

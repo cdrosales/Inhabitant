@@ -1,18 +1,12 @@
-    <?php get_header(); ?> 
+<?php get_header(); ?> 
 
     <!-- <h1><?php bloginfo('name'); ?></h1> -->
 
     
-    <div class="journalContainer">
-        <aside>
-        <div class="sidebar">
-        <?php dynamic_sidebar('sidebar-1'); ?>
-        </div>
-        </aside>
-
+    <section>
 
         <main>
-        <?php if( have_posts() ): 
+            <?php if( have_posts() ): 
 
             while ( have_posts() ):   //runs the loop
                 the_post();?>   <!-- grab info to post -->
@@ -36,11 +30,19 @@
                 <?php the_content(); ?> 
             </div>
 
+
+
+            <?php endwhile; ?>   <!-- loop ends -->
         </main>
-    </div>    
 
 
-        <?php endwhile; ?>   <!-- loop ends -->
+        <div class="sidebarContent">
+            <div class="sidebar">
+            <?php dynamic_sidebar('sidebar-1'); ?>
+            </div>
+        </div>
+    </section>    
+
 
         <?php the_posts_navigation(); ?> 
         <?php else : ?>
@@ -49,4 +51,4 @@
 
     
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>
