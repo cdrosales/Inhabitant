@@ -3,15 +3,42 @@
     font-family: 'Novecento Sans Web DemiBold';
     text-transform: uppercase;
     text-align: center;
-    padding: 30px 0;
+    padding: 40px 0;
     letter-spacing: 2px;
     color: $brand-baseFontColor;
 }
+
+.productsCategory{
+    padding-bottom: 30px;
+    .menu-product-types-container{
+        display: flex;
+        justify-content: center;
+        
+        .menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 300px;
+        
+        a{
+            color: $brand-green;
+            font-family: 'Novecento Sans Web';
+            text-transform: uppercase;
+            text-decoration: none;
+            font-size: $brand-baseFontSize;
+            padding: 10px 0;
+
+            }
+        }
+    }
+}
+
 
 .singleProducts{
     display: flex;
     flex-direction: row;
     padding: 40px 50px;
+
 
     .singleProductThumbnail{
 
@@ -43,7 +70,6 @@
             line-height: $brand-lineHeight;
             padding-bottom: 20px;
             width: 520px;
-
 
         }
     }

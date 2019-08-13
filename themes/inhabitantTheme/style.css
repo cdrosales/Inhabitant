@@ -136,7 +136,8 @@ body {
     color: #248A83; }
 
 .productsContainer {
-  padding: 20px 30px;
+  border-top: 1px dashed #a1a1a1;
+  padding: 20px;
   display: grid;
   grid-gap: 25px;
   grid-template-columns: repeat(4, minmax(250px, 250px));
@@ -428,9 +429,38 @@ footer {
   font-family: 'Novecento Sans Web DemiBold';
   text-transform: uppercase;
   text-align: center;
-  padding: 30px 0;
+  padding: 40px 0;
   letter-spacing: 2px;
   color: #404040; }
+
+.productsCategory {
+  padding-bottom: 30px; }
+  .productsCategory .menu-product-types-container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center; }
+    .productsCategory .menu-product-types-container .menu {
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: horizontal;
+      -webkit-box-direction: normal;
+          -ms-flex-direction: row;
+              flex-direction: row;
+      -webkit-box-pack: justify;
+          -ms-flex-pack: justify;
+              justify-content: space-between;
+      width: 300px; }
+      .productsCategory .menu-product-types-container .menu a {
+        color: #248A83;
+        font-family: 'Novecento Sans Web';
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: 16px;
+        padding: 10px 0; }
 
 .singleProducts {
   display: -webkit-box;

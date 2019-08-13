@@ -31,7 +31,8 @@
         add_theme_support ('title-tag'); // wordpress method -- just adding Title Tag
         register_nav_menus( array( // activates menu
             'primary' => 'Primary Menu', // location => name of menu -- can be anyname
-            'footer' => 'Footer Menu'
+            'footer' => 'Footer Menu',
+            'shop' => 'Product Categories Menu'
         ));
         
     }

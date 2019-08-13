@@ -8,6 +8,12 @@
 
 <div class="shopTitle"> <h1> Shop Stuff </h1> </div>
 
+<div class ="productsCategory">
+<?php wp_nav_menu( array(
+            'theme_location' => 'shop'
+        )); ?>
+</div>
+
 <div class="productsContainer">
 <?php if( have_posts() ): // have posts - checks if theres anypost available in your feed
 
