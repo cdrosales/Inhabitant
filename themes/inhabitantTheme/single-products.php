@@ -1,4 +1,4 @@
-<?php get_header(); ?> <!-- dont need include syntax for wordpress -->
+<?php get_header('white'); ?> <!-- dont need include syntax for wordpress -->
 
 <!-- <h1><?php bloginfo('name'); ?></h1> -->
 

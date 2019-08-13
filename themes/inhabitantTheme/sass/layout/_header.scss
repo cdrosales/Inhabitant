@@ -2,7 +2,20 @@
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    // border-bottom: 1px solid #e1e1e1;
+    padding: 2px;
+
+    .navLogo{
+        width: 35px;
+        height: 35px;
+        padding-left: 30px;
+    }
+}
+
+.navContainerWhite{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-bottom: 1px solid #e1e1e1;
     padding: 2px;
 
     .navLogo{

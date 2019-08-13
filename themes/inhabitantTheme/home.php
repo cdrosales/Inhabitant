@@ -1,4 +1,4 @@
-<?php get_header(); ?> 
+<?php get_header('white'); ?> 
 
     <!-- <h1><?php bloginfo('name'); ?></h1> -->
 
