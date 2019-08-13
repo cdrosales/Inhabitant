@@ -198,13 +198,13 @@ footer {
               -ms-flex-pack: justify;
                   justify-content: space-between; }
       footer .footerMainContainer .footerContainer .footerHours {
-        padding-left: 30px;
+        padding-left: 50px;
         color: #ffffff;
         text-transform: lowercase; }
     footer .footerMainContainer .footerLogo {
-      width: 200px;
-      height: 112px;
-      margin-top: -30px; }
+      width: 250px;
+      height: 262px;
+      margin-top: -100px; }
   footer .copyright {
     color: #ffffff;
     padding: 30px;
