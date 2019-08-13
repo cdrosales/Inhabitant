@@ -1,13 +1,21 @@
 html {
-    width: 1120px;
+    min-width: 1120px;
 }
 main{
     border-right: 1px solid #c8c8c8;
-    width: 835px;
+    // width: 835px;
+    width: 100%;
 }
 
 
 section {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
+
+    // display: grid;
+    // height: 100%;
+    // grid-template-areas:
+    // "3fr 1fr";
+    // width: 100%;
 }

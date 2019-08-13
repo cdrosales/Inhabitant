@@ -26,15 +26,26 @@
                 </div>
             </div>
             
-            <div class="journalContent">
-                <?php the_content(); ?> 
+        <div class="journalContent">
+
+            <?php the_post_thumbnail('large'); ?>
+
+            <div class="journalPostInfo">
+                <?php
+                    echo wp_trim_words( get_the_content(), 50, '[...]' );
+                    ?>
             </div>
+
+            <button class="readMore">Read More <i class="fas fa-long-arrow-alt-right"></i> </button>
+
+        </div>
 
 
 
             <?php endwhile; ?>   <!-- loop ends -->
         </main>
 
+        
 
         <div class="sidebarContent">
             <div class="sidebar">
