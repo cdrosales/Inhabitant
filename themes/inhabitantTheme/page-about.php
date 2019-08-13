@@ -11,7 +11,16 @@
         <h2><?php the_title(); ?></h2> 
     </div>
 
+    
+
     <div class="aboutContent">
+
+    <div class="heroWrapper">
+        <div class="heroImage">
+        <?php the_post_thumbnail(); ?>
+        </div>
+    </div>
+
         <?php the_content(); ?>
     </div>
 

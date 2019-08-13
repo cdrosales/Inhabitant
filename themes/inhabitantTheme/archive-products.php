@@ -6,6 +6,8 @@
 <!-- <?php get_the_title(); ?> -->
 
 
+<div class="shopTitle"> <h1> Shop Stuff </h1> </div>
+
 <div class="productsContainer">
 <?php if( have_posts() ): // have posts - checks if theres anypost available in your feed
 
