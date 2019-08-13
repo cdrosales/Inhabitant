@@ -10,13 +10,21 @@
 </head>
 <body <?php body_class();?>> <!-- dynamic body class name depends on what page its at -->
 
-<div class ="nav">
-    <?php wp_nav_menu( array(
-        'theme_location' => 'primary'
-    )); ?>
-    </div>
+<div class="navContainer">
+
+    
+    <a href="http://localhost:8888/Inhabitant/home">
+    <img src="<?php echo get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-tent-white.svg'; ?>" class="navLogo" />
+    </a>
 
 
+    <div class ="nav">
+        <?php wp_nav_menu( array(
+            'theme_location' => 'primary'
+        )); ?>
+        </div>
 
+</div>
 
+ 
 <title><?php bloginfo('title');?></title>

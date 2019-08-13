@@ -3,6 +3,8 @@
 <!-- <h1><?php bloginfo('name'); ?></h1> -->
 
 
+<!-- <?php get_the_title(); ?> -->
+
 
 <div class="productsContainer">
 <?php if( have_posts() ): // have posts - checks if theres anypost available in your feed
