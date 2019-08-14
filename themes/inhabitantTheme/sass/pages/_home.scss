@@ -1,5 +1,5 @@
 .journalContainer{
-    margin-bottom: 70px;
+    margin: 20px 0 70px 0;
 
     .journalImage{
         padding: 0 51px;
@@ -33,17 +33,17 @@
     .postData{
     position: absolute;
     z-index: 1;
-    font-family: 'Novecento Sans Web DemiBold';
+    font-family: 'Novecento Sans Web';
     color: $brand-white;
     background-color: $brand-green;
     font-size: $brand-baseFontSize;
     text-transform: uppercase;
     text-align: right;
     padding: 10px 5px;
-    width: 400px;
+    width: 375px;
     text-align: center;
     margin-top: -69px;
-    margin-left: 398px;
+    margin-left: 423px;
     // margin-left: 471.5px;
 
     }

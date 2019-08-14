@@ -3,7 +3,7 @@
     .sidebar {
         // width: 25%;
         // height: 100%;
-        padding: 11% 11% 0 11%;
+        padding: 25% 11% 0 11%;
         
         
         aside{
@@ -23,9 +23,12 @@
                             i{
                             padding-right: 10px;
                             padding-top: 5px;
+                            color: $brand-baseFontColor;
+
                             }
                             p{
                             line-height: $brand-lineHeight;
+                            color: $brand-baseFontColor;
                             }
                             .sidebarNumber, .sidebarEmail{
                                 color: $brand-green;
@@ -41,6 +44,7 @@
             text-transform: uppercase;
             padding-bottom: 15px;  
             letter-spacing: 2px;     
+            color: $brand-purple;
             }
 
             a {

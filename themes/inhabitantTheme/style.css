@@ -267,7 +267,7 @@ footer {
     font-size: 16px; }
 
 .sidebarContent .sidebar {
-  padding: 11% 11% 0 11%; }
+  padding: 25% 11% 0 11%; }
   .sidebarContent .sidebar aside {
     padding-bottom: 20px; }
     .sidebarContent .sidebar aside .textwidget {
@@ -284,9 +284,11 @@ footer {
         padding: 5px 0; }
         .sidebarContent .sidebar aside .textwidget ul li i {
           padding-right: 10px;
-          padding-top: 5px; }
+          padding-top: 5px;
+          color: #404040; }
         .sidebarContent .sidebar aside .textwidget ul li p {
-          line-height: 1.75; }
+          line-height: 1.75;
+          color: #404040; }
         .sidebarContent .sidebar aside .textwidget ul li .sidebarNumber, .sidebarContent .sidebar aside .textwidget ul li .sidebarEmail {
           color: #248A83; }
     .sidebarContent .sidebar aside h2 {
@@ -294,7 +296,8 @@ footer {
       font-size: 20px;
       text-transform: uppercase;
       padding-bottom: 15px;
-      letter-spacing: 2px; }
+      letter-spacing: 2px;
+      color: #2f1339; }
     .sidebarContent .sidebar aside a {
       font-family: 'Merriweather Web Light';
       line-height: 1.75;
@@ -325,7 +328,7 @@ footer {
   border: none; }
 
 .journalContainer {
-  margin-bottom: 70px; }
+  margin: 20px 0 70px 0; }
   .journalContainer .journalImage {
     padding: 0 51px; }
     .journalContainer .journalImage img {
@@ -349,17 +352,17 @@ footer {
   .journalContainer .postData {
     position: absolute;
     z-index: 1;
-    font-family: 'Novecento Sans Web DemiBold';
+    font-family: 'Novecento Sans Web';
     color: #ffffff;
     background-color: #248A83;
     font-size: 16px;
     text-transform: uppercase;
     text-align: right;
     padding: 10px 5px;
-    width: 400px;
+    width: 375px;
     text-align: center;
     margin-top: -69px;
-    margin-left: 398px; }
+    margin-left: 423px; }
   .journalContainer .journalPostInfo {
     color: #404040;
     line-height: 1.75;
