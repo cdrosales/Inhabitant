@@ -349,6 +349,11 @@ footer {
     padding: 10px;
     margin-left: 58px;
     margin-top: -500px; }
+    .journalContainer .journalTitle a {
+      text-decoration: none;
+      color: #ffffff; }
+  .journalContainer .journalTitle:hover {
+    color: #f0e4d1; }
   .journalContainer .postData {
     position: absolute;
     z-index: 1;
@@ -379,6 +384,15 @@ footer {
     margin-left: 6.8%;
     margin-top: 10px;
     border-color: #404040; }
+    .journalContainer .readMore a {
+      color: black;
+      text-decoration: none; }
+  .journalContainer .readMore:hover {
+    background-color: #248A83;
+    color: #ffffff;
+    border: none; }
+    .journalContainer .readMore:hover a {
+      color: #ffffff; }
 
 .aboutTitle {
   position: absolute;

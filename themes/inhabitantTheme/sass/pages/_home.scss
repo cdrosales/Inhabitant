@@ -27,7 +27,15 @@
     padding: 10px;
     margin-left: 58px;
     margin-top: -500px;
-    // margin-left: 5.05%;
+        a{
+            text-decoration: none;
+            color: $brand-white;
+
+        }
+    }
+
+    .journalTitle:hover {
+        color: $brand-yellow;
     }
 
     .postData{
@@ -64,12 +72,23 @@
     }
     .readMore{
     padding: 10px 20px;
-    background-color:#ffffff;
+    background-color:$brand-white;
     text-transform: uppercase;
-                // margin-left: 50px;
     margin-left: 6.8%;
     margin-top: 10px;
     border-color: $brand-baseFontColor;
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+    .readMore:hover{
+        background-color:$brand-green;
+        color: $brand-white;
+        border: none;
+        a{
+            color: $brand-white;
+        }
     }
 }
 

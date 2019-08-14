@@ -17,7 +17,7 @@
                 
                 <div class="journalImage"><?php the_post_thumbnail('large'); ?></div>
 
-                <div class="journalTitle"><?php the_title(); ?></div>
+                <div class="journalTitle"><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></div>
 
                 <div class="postData">
 
@@ -38,7 +38,8 @@
                     ?>
             </div>
             
-            <button class="readMore">Read More <i class="fas fa-long-arrow-alt-right"></i> </button>
+
+            <button class="readMore"><a href="<?php the_permalink(); ?>">Read More</a> <i class="fas fa-long-arrow-alt-right"></i> </button>
 
 
 
