@@ -18,12 +18,14 @@
                 <div class="journalTitle"><?php the_title(); ?></div>
 
                 <div class="postData">
+
+    <!-- echo '<h2>' . the_title() . '</h2>'; -->
+
                     <p>
-                        <span class="postDate"><?php echo date("d F Y"); ?></span>
-                        /
-                        <span class="postComments"><?php echo get_comments(); ?></span>        
-                        / by
-                        <span class="postAuthor"><?php echo get_the_author(); ?></span>
+                        <span class="postDate"><?php echo date("d F Y") . '/'; ?></span>
+            
+                        <span class="postComments"><?php echo get_comments_number() . ' comments/'; ?></span>        
+                        <span class="postAuthor"><?php echo 'by ' . get_the_author(); ?></span>
                     </p>
                 </div>
   

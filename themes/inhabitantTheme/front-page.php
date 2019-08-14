@@ -1,5 +1,6 @@
 <?php get_header(); ?> 
 
+
 <?php if( have_posts() ): 
 
     while ( have_posts() ): 
@@ -28,6 +29,12 @@
 <?php else : ?>
         <p>No posts found</p>
 <?php endif; ?>
+
+
+
+
+
+
 
 
   <!-- calling in sidebar -->

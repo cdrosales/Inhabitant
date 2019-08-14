@@ -1,14 +1,18 @@
-html {
-    width: 1120px;
+html{
+    width: 100%;
+}
+body {
+    max-width: 1120px;
     margin: 0 auto;
 }
+
+
 main{
     border-right: 1px solid #c8c8c8;
     // width: 835px;
     width: 100%;
     // margin: 0 auto;
 }
-
 
 section {
     display: flex;
