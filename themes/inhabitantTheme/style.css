@@ -137,9 +137,9 @@ body {
 
 .productsContainer {
   border-top: 1px dashed #a1a1a1;
-  padding: 50px 20px;
+  padding: 50px 20px 70px 20px;
   display: grid;
-  grid-gap: 25px;
+  grid-gap: 2%;
   grid-template-columns: repeat(4, minmax(250px, 250px));
   grid-template-rows: repeat(4, 288px); }
   .productsContainer .products {
@@ -326,7 +326,7 @@ footer {
 .journalContainer {
   margin-bottom: 70px; }
   .journalContainer .journalImage {
-    padding: 0 5.8%; }
+    padding: 0 51px; }
     .journalContainer .journalImage img {
       position: relative;
       width: 750px;
@@ -343,8 +343,8 @@ footer {
     max-width: 400px;
     line-height: 1.4;
     padding: 10px;
-    margin-top: -500px;
-    margin-left: 5.1%; }
+    margin-left: 58px;
+    margin-top: -500px; }
   .journalContainer .postData {
     position: absolute;
     z-index: 1;
@@ -358,7 +358,7 @@ footer {
     width: 325px;
     text-align: center;
     margin-top: -69px;
-    margin-left: 472px; }
+    margin-left: 473px; }
   .journalContainer .journalPostInfo {
     color: #404040;
     line-height: 1.75;
@@ -373,14 +373,6 @@ footer {
     margin-left: 6.8%;
     margin-top: 10px;
     border-color: #404040; }
-
-@media only screen and (min-width: 1240px) {
-  .journalContainer {
-    margin-left: 50px; }
-    .journalContainer .journalTitle {
-      margin-left: 4.9%; }
-    .journalContainer .postData {
-      margin-left: 476px; } }
 
 .aboutTitle {
   position: absolute;
@@ -515,7 +507,8 @@ footer {
     width: 520px; }
 
 html {
-  min-width: 1120px; }
+  width: 1120px;
+  margin: 0 auto; }
 
 main {
   border-right: 1px solid #c8c8c8;
@@ -529,6 +522,6 @@ section {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between; }
+  -webkit-box-pack: right;
+      -ms-flex-pack: right;
+          justify-content: right; }
