@@ -13,13 +13,13 @@
                 the_post();?>   <!-- grab info to post -->
             
   
+    
+                
                 <div class="journalImage"><?php the_post_thumbnail('large'); ?></div>
 
                 <div class="journalTitle"><?php the_title(); ?></div>
 
                 <div class="postData">
-
-    <!-- echo '<h2>' . the_title() . '</h2>'; -->
 
                     <p>
                         <span class="postDate"><?php echo date("d F Y") . '/'; ?></span>

@@ -367,6 +367,8 @@ footer {
     font-size: 16px;
     width: 760px;
     margin: 0 7%; }
+    .journalContainer .journalPostInfo p {
+      padding-bottom: 20px; }
   .journalContainer .readMore {
     padding: 10px 20px;
     background-color: #ffffff;
