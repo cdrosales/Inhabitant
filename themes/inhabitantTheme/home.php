@@ -5,15 +5,17 @@
     
     <section>
 
-        <main>
+<main>
+    <div class="journalContainer">
             <?php if( have_posts() ): 
 
             while ( have_posts() ):   //runs the loop
                 the_post();?>   <!-- grab info to post -->
             
+  
+                <div class="journalImage"><?php the_post_thumbnail('large'); ?></div>
 
-            <div class="journalTitle">
-                <h2><?php the_title(); ?></h2> 
+                <div class="journalTitle"><?php the_title(); ?></div>
 
                 <div class="postData">
                     <p>
@@ -24,26 +26,27 @@
                         <span class="postAuthor"><?php echo get_the_author(); ?></span>
                     </p>
                 </div>
-            </div>
-            
-        <div class="journalContent">
+  
 
-            <?php the_post_thumbnail('large'); ?>
+            
 
             <div class="journalPostInfo">
                 <?php
                     echo wp_trim_words( get_the_content(), 50, '[...]' );
                     ?>
             </div>
-
+            
             <button class="readMore">Read More <i class="fas fa-long-arrow-alt-right"></i> </button>
 
-        </div>
 
 
 
-            <?php endwhile; ?>   <!-- loop ends -->
-        </main>
+
+
+            <?php endwhile; ?>  
+       <!-- loop ends -->
+            </div>
+</main>
 
         
 

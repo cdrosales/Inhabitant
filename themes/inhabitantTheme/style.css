@@ -323,23 +323,30 @@ footer {
   margin-bottom: 50px;
   border: none; }
 
-.journalTitle {
-  width: 100%;
-  position: absolute;
-  z-index: 1;
-  padding-top: 7%; }
-  .journalTitle h2 {
+.journalContainer {
+  margin-bottom: 70px; }
+  .journalContainer .journalImage {
+    padding: 0 5.8%; }
+    .journalContainer .journalImage img {
+      position: relative;
+      width: 750px;
+      height: 510px;
+      left: 7px;
+      margin: 30px 0; }
+  .journalContainer .journalTitle {
+    position: absolute;
     font-family: 'Novecento Sans Web DemiBold';
     color: #ffffff;
     background-color: #248A83;
-    margin-left: 40px;
     font-size: 30px;
     text-transform: uppercase;
     max-width: 400px;
     line-height: 1.4;
-    padding: 10px; }
-  .journalTitle .postData {
-    position: relative;
+    padding: 10px;
+    margin-top: -500px;
+    margin-left: 5.1%; }
+  .journalContainer .postData {
+    position: absolute;
     z-index: 1;
     font-family: 'Novecento Sans Web DemiBold';
     color: #ffffff;
@@ -347,34 +354,33 @@ footer {
     font-size: 16px;
     text-transform: uppercase;
     text-align: right;
-    padding: 10px;
-    width: 29.1%;
-    text-align: right;
-    margin: 0 39.65%; }
-
-.journalContent {
-  color: #404040;
-  padding: 25px 0 35px 0; }
-  .journalContent img {
-    position: relative;
-    width: 86.9%;
-    height: 44.5%;
-    padding: 10px 40px;
-    max-width: 86.8%; }
-  .journalContent .journalPostInfo {
+    padding: 10px 5px;
+    width: 325px;
+    text-align: center;
+    margin-top: -69px;
+    margin-left: 472px; }
+  .journalContainer .journalPostInfo {
     color: #404040;
     line-height: 1.75;
     font-family: 'Merriweather Web Light';
     font-size: 16px;
-    padding: 10px 40px;
-    width: 87%; }
-  .journalContent .readMore {
+    width: 760px;
+    margin: 0 7%; }
+  .journalContainer .readMore {
     padding: 10px 20px;
     background-color: #ffffff;
     text-transform: uppercase;
-    margin-left: 40px;
+    margin-left: 6.8%;
     margin-top: 10px;
     border-color: #404040; }
+
+@media only screen and (min-width: 1240px) {
+  .journalContainer {
+    margin-left: 50px; }
+    .journalContainer .journalTitle {
+      margin-left: 4.9%; }
+    .journalContainer .postData {
+      margin-left: 476px; } }
 
 .aboutTitle {
   position: absolute;

@@ -1,80 +1,85 @@
-.journalTitle{
-    width: 100%;
-    position: absolute;
-    z-index: 1;
-    padding-top: 7%;
+.journalContainer{
+    margin-bottom: 70px;
 
-        h2{
-        font-family: 'Novecento Sans Web DemiBold';
-        color: $brand-white;
-        background-color: $brand-green;
-        // margin-left: 175px;
-        margin-left: 40px;
-
-        font-size: 30px;
-        text-transform: uppercase;
-        max-width: 400px;
-        line-height: 1.4;
-        padding: 10px;
-        }
-
-        .postData{
-            position: relative;
-            // right: 0;
-            // left: 600px;
-            // left: 445px;
-            // top: 513px;
-
-            // left: 39.7%;
-            // top: 160%;
-            
-            
-            z-index: 1;
-            font-family: 'Novecento Sans Web DemiBold';
-            color: $brand-white;
-            background-color: $brand-green;
-            font-size: $brand-baseFontSize;
-            text-transform: uppercase;
-            text-align: right;
-            padding: 10px;
-            width: 29.1%;
-            text-align: right;
-            margin: 0 39.65%;
-        }
-}
-
-.journalContent{
-    color: $brand-baseFontColor;
-    padding: 25px 0 35px 0;
-        
+    .journalImage{
+        padding: 0 5.8%;
 
         img{
-            position: relative;
-            width: 86.9%;
-            height: 44.5%;
-            padding: 10px 40px;
-            max-width: 86.8%;
-            // padding: 10px 175px;
-        }
-        .journalPostInfo{
-            color: $brand-baseFontColor;
-            line-height: $brand-lineHeight;
-            font-family: 'Merriweather Web Light';
-            font-size: $brand-baseFontSize;
-            // padding: 10px 175px;
-            padding: 10px 40px;
-            // width: 755px;
-            width: 87%;
+        position: relative;
+        width: 750px;
+        height: 510px;
+        left: 7px;
+        margin: 30px 0;
         }
 
-        .readMore{
-            padding: 10px 20px;
-            background-color:#ffffff;
-            text-transform: uppercase;
-            margin-left: 40px;
-            margin-top: 10px;
-            border-color: $brand-baseFontColor;
-        }
+    }
+
+
+    .journalTitle{
+    position: absolute;
+    font-family: 'Novecento Sans Web DemiBold';
+    color: $brand-white;
+    background-color: $brand-green;
+    font-size: 30px;
+    text-transform: uppercase;
+    max-width: 400px;
+    line-height: 1.4;
+    padding: 10px;
+    margin-top: -500px;
+    margin-left: 5.1%;
+    }
+
+    .postData{
+    position: absolute;
+    z-index: 1;
+    font-family: 'Novecento Sans Web DemiBold';
+    color: $brand-white;
+    background-color: $brand-green;
+    font-size: $brand-baseFontSize;
+    text-transform: uppercase;
+    text-align: right;
+    padding: 10px 5px;
+    width: 325px;
+    text-align: center;
+    margin-top: -69px;
+    margin-left: 472px;
+
+    }
+            
+    .journalPostInfo{
+    color: $brand-baseFontColor;
+    line-height: $brand-lineHeight;
+    font-family: 'Merriweather Web Light';
+    font-size: $brand-baseFontSize;
+    width: 760px;
+    margin: 0 7%;
+
+
+        
+    }
+    .readMore{
+    padding: 10px 20px;
+    background-color:#ffffff;
+    text-transform: uppercase;
+                // margin-left: 50px;
+    margin-left: 6.8%;
+    margin-top: 10px;
+    border-color: $brand-baseFontColor;
+    }
+}
+
+
+@media only screen and (min-width:1240px) {
+
+.journalContainer{
+    margin-left: 50px;
+    .journalTitle{
+        margin-left: 4.9%;
+    }
+    .postData{
+        margin-left: 476px;
+    }
+}
 }
 
 
