@@ -1,6 +1,5 @@
 <?php get_header(); ?> 
 
-
 <?php if( have_posts() ): 
 
     while ( have_posts() ): 
@@ -34,10 +33,63 @@
 
 
 
+<?php 
+        $terms = get_terms(array(
+            'taxonomy' => 'product-type',
+            'hide_empty' => 0 
+        ));
+    
+        foreach($terms as $term) :
+            echo '<a href="' . get_term_link($term) . '">' . '<h2>' . $term->name . '</h2>' . '</a>';
+        endforeach;
+            ?>
 
+<?php 
 
+$blogs = new WP_Query(array(
+    'post_type' => 'products', // 'producst' -- grab taxonomies
+    'posts_per_page' => '4', //-1 will display everything
+    'order_by' => 'date',
+    'order' => 'DSC'
 
-  <!-- calling in sidebar -->
+));
+
+while($blogs->have_posts()) :
+    echo $blogs->the_post();
+    echo '<br>';
+    echo '<h2>' . the_title() . '</h2>';
+
+endwhile;
+
+wp_reset_postdata();
+
+?>
+
+<?php 
+
+$blogs = new WP_Query(array(
+    'post_type' => 'post', // 'producst' -- grab taxonomies
+    'posts_per_page' => '3', //-1 will display everything
+    'order_by' => 'date',
+    'order' => 'DSC'
+
+));
+
+while($blogs->have_posts()) :
+    echo $blogs->the_post();
+    echo '<br>';
+    echo '<h2>' . the_title() . '</h2>';
+    echo date("d F Y");
+    echo get_the_author();
+    echo the_post_thumbnail('thumbnail');
+            
+    
+
+endwhile;
+
+wp_reset_postdata();
+
+?>
 
 
 <?php get_footer(); ?>
