@@ -1,4 +1,7 @@
-<?php get_header(); ?> 
+<?php get_header('white'); ?> 
+
+
+
 
 <?php  
 // get category names and links for products 
@@ -16,6 +19,7 @@ foreach($terms as $term) :
     echo get_term_link($term);
 
 endforeach;
+
 
 
 //custom wordpress loop to display atleast 3 blogs
@@ -72,36 +76,33 @@ wp_reset_postdata();
 
 ?>
 
+<div class="productsContainer">
+
 
 <?php if( have_posts() ): 
 
     while ( have_posts() ): 
         the_post();?> 
 
- 
-    <div class="aboutContent">
 
-    <div class="heroWrapper">
-        <div class="heroImage">
-        <?php the_post_thumbnail(); ?>
-        </div>
+<div class="products">
+    <div class="productsThumbnail">
+    <a href="<?php the_permalink(); ?>"><?php the_post_thumbnail('medium'); ?></a>
     </div>
-    
-    <img src="<?php echo get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-full.svg'; ?>" class="homeLogo" />
-    
 
-        <?php the_content(); ?>
-</div>
-
-
+    <div class="productsInfo">
+        <?php echo the_title() . '.........$' . get_field('price'); ?> 
+    </div>
+    </div>
     <?php endwhile; ?> 
+   
 
 
     <?php the_posts_navigation(); ?> 
 <?php else : ?>
         <p>No posts found</p>
 <?php endif; ?>
-
+</div>
 
 
 
