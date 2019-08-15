@@ -1,9 +1,5 @@
 <?php get_header('white'); ?> 
 
-
-
-
-
 <?php  
 
 

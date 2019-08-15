@@ -7,22 +7,24 @@
     while ( have_posts() ): 
         the_post();?>  
 
-    <div class ="aboutTitle">
-        <h2><?php the_title(); ?></h2> 
-    </div>
-
+   
     
 
-    <div class="aboutContent">
+<div class="aboutContent">
 
     <div class="heroWrapper">
+        <div class ="aboutTitle">
+        <?php the_title(); ?> 
+        </div>
         <div class="heroImage">
         <?php the_post_thumbnail(); ?>
         </div>
+        
+
     </div>
 
         <?php the_content(); ?>
-    </div>
+</div>
 
 
     <?php endwhile; ?> 
