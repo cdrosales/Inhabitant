@@ -3,7 +3,10 @@
 
 
 
+
 <?php  
+
+
 // get category names and links for products 
 $terms = get_terms(array(
     'taxonomy' => 'product-type',
@@ -16,10 +19,12 @@ $terms = get_terms(array(
 
 // echo $terms[0]->name;
 
+
 foreach($terms as $term) :
 
+
     // echo $term->name;
-    echo '<a href="' . get_term_link($term) . '">' . $term->name . '</a>';
+    // echo '<a href="' . get_term_link($term) . '">' . $term->name . '</a>';
 
 endforeach;
 
@@ -57,26 +62,35 @@ endforeach;
 // endforeach;
 //wp_reset_postdata();
 
+
 // custom loops using wp_query
 
-$blogs = new WP_Query(array(
-    'post_type' => 'posts', // 'producst' -- grab taxonomies
-    'posts_per_page' => '3', //-1 will display everything
-    'order_by' => 'date',
-    'order' => 'ASC'
+// $blogs = new WP_Query(array(
+//     'post_type' => 'products', // 'producst' -- grab taxonomies
+//     'posts_per_page' => '4', //-1 will display everything
+//     'order_by' => 'date',
+//     'order' => 'ASC'
 
-));
+// ));
 
-while($blogs->have_posts()) :
-    echo $blogs->the_post();
-    echo '<br>';
-    echo '<h2>' . the_title() . '</h2>';
-endwhile;
+// while($blogs->have_posts()) :
+//     echo $blogs->the_post();
+//     echo '<br>';
+//     echo '<h2>' . the_title() . '</h2>';
 
-wp_reset_postdata();
+// endwhile;
+
+// wp_reset_postdata();
 
 
+// 
 ?>
+
+
+<div class="categoryTitle"><h1><?php echo single_cat_title();?></h1></div>
+
+<div class="categoryDescription"><p><?php echo category_description();?></p></div>
+
 
 <div class="productsContainer">
 
@@ -106,13 +120,6 @@ wp_reset_postdata();
 <?php endif; ?>
 </div>
 
-
-
-
-
-
-
-  <!-- calling in sidebar -->
 
 
 <?php get_footer(); ?>

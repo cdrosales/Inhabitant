@@ -1,4 +1,4 @@
-.shopTitle{
+.shopTitle, .categoryTitle{
     font-size: 30px;
     font-family: 'Novecento Sans Web DemiBold';
     text-transform: uppercase;
@@ -6,6 +6,16 @@
     padding-top: 40px;
     letter-spacing: 2px;
     color: $brand-baseFontColor;
+}
+
+.categoryDescription{
+    p{
+    padding: 30px auto;
+    font-family: 'Merriweather Web Light';
+    color: $brand-baseFontColor;
+    text-align: center;
+    padding: 10px 0;
+    }
 }
 
 .productsCategory{

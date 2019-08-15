@@ -490,7 +490,7 @@ footer {
     padding: 20px 0;
     color: #404040; }
 
-.shopTitle {
+.shopTitle, .categoryTitle {
   font-size: 30px;
   font-family: 'Novecento Sans Web DemiBold';
   text-transform: uppercase;
@@ -498,6 +498,13 @@ footer {
   padding-top: 40px;
   letter-spacing: 2px;
   color: #404040; }
+
+.categoryDescription p {
+  padding: 30px auto;
+  font-family: 'Merriweather Web Light';
+  color: #404040;
+  text-align: center;
+  padding: 10px 0; }
 
 .productsCategory {
   padding: 30px 0;
