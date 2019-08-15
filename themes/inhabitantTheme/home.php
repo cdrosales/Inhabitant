@@ -34,7 +34,7 @@
 
             <div class="journalPostInfo">
                 <?php
-                    echo wp_trim_words( get_the_content(), 50, '[...]' );
+                    echo wp_trim_words( get_the_content(), 50, ' [...]' );
                     ?>
             </div>
             

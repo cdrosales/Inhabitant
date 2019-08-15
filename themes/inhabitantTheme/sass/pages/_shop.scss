@@ -38,20 +38,21 @@
 .singleProducts{
     display: flex;
     flex-direction: row;
-    padding: 40px 50px 0 50px;
-    height: 100%;
+    padding: 40px 30px 80px 30px;
+    
 
 
     .singleProductThumbnail{
 
         img{
-        width: 400px;
-        height: 350px;
+        width: 480px;
+        height: 300px;
         padding-right: 40px;
         }
     }
 
     .singleProductInfo{
+        // need to fix name to purple and ....$ to grey
         
         .singleProductTitle{
             font-size: 35px;;
@@ -59,6 +60,7 @@
             font-family: 'Novecento Sans Web DemiBold';
             text-transform: uppercase;
             padding-bottom: 20px;
+            padding-top: 15px;
         }
 
         .singleProductPrice{
@@ -71,8 +73,36 @@
             font-family: 'Merriweather Web Light';
             line-height: $brand-lineHeight;
             padding-bottom: 20px;
-            width: 520px;
+            width: 525px;
 
+        }
+        .shopButton{
+            display: flex;
+            justify-content: left;
+            margin: 10px 0;
+
+            .button{
+                margin-right: 5px;
+                padding: 10px 20px;
+                background-color:$brand-white;
+                text-transform: uppercase;
+                border-color: $brand-baseFontColor;
+                    a{
+                        color: black;
+                        text-decoration: none;
+                    }
+                    i{
+                        padding-right: 5px;
+                    }
+                }
+                .button:hover{
+                    background-color:$brand-green;
+                    color: $brand-white;
+                    border: none;
+                    a{
+                        color: $brand-white;
+                    }
+                }
         }
     }
 

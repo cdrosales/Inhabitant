@@ -116,6 +116,8 @@ body {
   .nav .menu li a {
     text-decoration: none;
     color: #ffffff; }
+  .nav .menu li a:hover {
+    color: #f0e4d1; }
 
 .navWhite .menu {
   margin: 10px 30px;
@@ -134,6 +136,8 @@ body {
   .navWhite .menu li a {
     text-decoration: none;
     color: #248A83; }
+  .navWhite .menu li a:hover {
+    color: #2f1339; }
 
 .productsContainer {
   border-top: 1px dashed #a1a1a1;
@@ -141,7 +145,9 @@ body {
   grid-gap: 3.5%;
   grid-template-columns: repeat(4, minmax(250px, 250px));
   grid-template-rows: repeat(4, 288px);
-  height: 1380px; }
+  height: 1380px;
+  width: 1120px;
+  margin: 0 auto; }
   .productsContainer .products {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -178,11 +184,11 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 2px; }
+  padding: 2px 0 1px 0; }
   .navContainer .navLogo {
     width: 35px;
     height: 35px;
-    padding-left: 30px; }
+    padding-left: 50px; }
 
 .navContainerWhite {
   display: -webkit-box;
@@ -200,7 +206,7 @@ body {
   .navContainerWhite .navLogo {
     width: 35px;
     height: 35px;
-    padding-left: 30px; }
+    padding-left: 50px; }
 
 h3 {
   color: #d99054;
@@ -431,7 +437,7 @@ footer {
     text-transform: uppercase;
     font-size: 26px;
     padding: 30px 0;
-    color: #404040; }
+    color: #2f1339; }
   .aboutContent p {
     font-family: 'Merriweather Web Light';
     padding: 15px 160px;
@@ -443,17 +449,18 @@ footer {
   padding: 3.7% 6%; }
   .contactContent .inhabitantMap {
     width: 95%;
-    padding: 20px 0; }
+    padding: 30px 0; }
   .contactContent h2 {
     text-transform: uppercase;
     font-family: 'Novecento Sans Web DemiBold';
     font-size: 26px;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    color: #2f1339; }
   .contactContent p {
     font-family: 'Merriweather Web Light';
     line-height: 1.75;
     font-size: 16px;
-    padding: 10px 0;
+    padding: 20px 0;
     color: #404040; }
 
 .shopTitle {
@@ -502,18 +509,18 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 40px 50px 0 50px;
-  height: 100%; }
+  padding: 40px 30px 80px 30px; }
   .singleProducts .singleProductThumbnail img {
-    width: 400px;
-    height: 350px;
+    width: 480px;
+    height: 300px;
     padding-right: 40px; }
   .singleProducts .singleProductInfo .singleProductTitle {
     font-size: 35px;
     color: #d99054;
     font-family: 'Novecento Sans Web DemiBold';
     text-transform: uppercase;
-    padding-bottom: 20px; }
+    padding-bottom: 20px;
+    padding-top: 15px; }
   .singleProducts .singleProductInfo .singleProductPrice {
     padding-bottom: 20px;
     font-size: 25px; }
@@ -522,13 +529,38 @@ footer {
     font-family: 'Merriweather Web Light';
     line-height: 1.75;
     padding-bottom: 20px;
-    width: 520px; }
+    width: 525px; }
+  .singleProducts .singleProductInfo .shopButton {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 10px 0; }
+    .singleProducts .singleProductInfo .shopButton .button {
+      margin-right: 5px;
+      padding: 10px 20px;
+      background-color: #ffffff;
+      text-transform: uppercase;
+      border-color: #404040; }
+      .singleProducts .singleProductInfo .shopButton .button a {
+        color: black;
+        text-decoration: none; }
+      .singleProducts .singleProductInfo .shopButton .button i {
+        padding-right: 5px; }
+    .singleProducts .singleProductInfo .shopButton .button:hover {
+      background-color: #248A83;
+      color: #ffffff;
+      border: none; }
+      .singleProducts .singleProductInfo .shopButton .button:hover a {
+        color: #ffffff; }
 
 html {
   width: 100%; }
 
 body {
-  max-width: 1120px;
+  max-width: 100%;
   margin: 0 auto; }
 
 main {

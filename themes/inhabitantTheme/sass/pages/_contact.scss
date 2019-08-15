@@ -5,20 +5,21 @@
 
     .inhabitantMap{
         width: 95%;
-        padding: 20px 0;
+        padding: 30px 0;
     }
     h2{
         text-transform: uppercase;
         font-family: 'Novecento Sans Web DemiBold';
         font-size: 26px;
         padding-bottom: 20px;
+        color: $brand-purple;
     }
 
     p{
         font-family: 'Merriweather Web Light';
         line-height: $brand-lineHeight;
         font-size: $brand-baseFontSize;
-        padding: 10px 0;
+        padding: 20px 0;
         color: $brand-baseFontColor;
     }
     
