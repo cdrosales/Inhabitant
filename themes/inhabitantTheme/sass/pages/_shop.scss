@@ -10,27 +10,18 @@
 
 .productsCategory{
     padding: 30px 0;
-    
-    .menu-product-types-container{
-        display: flex;
-        justify-content: center;
-        
-        .menu{
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
-        width: 300px;
-        
-        a{
-            color: $brand-green;
-            font-family: 'Novecento Sans Web';
-            text-transform: uppercase;
-            text-decoration: none;
-            font-size: $brand-baseFontSize;
-            padding: 10px 0;
-
-            }
-        }
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 300px;
+     
+    a{
+         color: $brand-green;
+        font-family: 'Novecento Sans Web';
+        text-transform: uppercase;
+        text-decoration: none;
+        font-size: $brand-baseFontSize;
+        padding: 10px 0;
     }
 }
 
@@ -52,7 +43,6 @@
     }
 
     .singleProductInfo{
-        // need to fix name to purple and ....$ to grey
         
         .singleProductTitle{
             font-size: 35px;;

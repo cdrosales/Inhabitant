@@ -31,6 +31,14 @@
             width: 240px;
             font-family: 'Merriweather Web Light';
 
+            .title{
+                color: $brand-purple;
+            }
+            .price{
+                color: $brand-baseFontColor;
+            }
+
+
         }
 
     }

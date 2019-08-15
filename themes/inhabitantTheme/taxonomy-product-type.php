@@ -10,13 +10,16 @@ $terms = get_terms(array(
     'hide_empty' => 0 
 ));
 
-// print_r($terms[0]->name);
+// print_r($terms); 
 
-echo $terms[0]->name;
+// print_r($terms[0]->name); 
+
+// echo $terms[0]->name;
 
 foreach($terms as $term) :
-    echo $term->name;
-    echo get_term_link($term);
+
+    // echo $term->name;
+    echo '<a href="' . get_term_link($term) . '">' . $term->name . '</a>';
 
 endforeach;
 
@@ -71,7 +74,6 @@ while($blogs->have_posts()) :
 endwhile;
 
 wp_reset_postdata();
-
 
 
 ?>

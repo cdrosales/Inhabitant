@@ -170,6 +170,10 @@ body {
       text-align: center;
       width: 240px;
       font-family: 'Merriweather Web Light'; }
+      .productsContainer .products .productsInfo .title {
+        color: #2f1339; }
+      .productsContainer .products .productsInfo .price {
+        color: #404040; }
 
 .navContainer {
   display: -webkit-box;
@@ -496,33 +500,22 @@ footer {
   color: #404040; }
 
 .productsCategory {
-  padding: 30px 0; }
-  .productsCategory .menu-product-types-container {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center; }
-    .productsCategory .menu-product-types-container .menu {
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-box-orient: horizontal;
-      -webkit-box-direction: normal;
-          -ms-flex-direction: row;
-              flex-direction: row;
-      -webkit-box-pack: justify;
-          -ms-flex-pack: justify;
-              justify-content: space-between;
-      width: 300px; }
-      .productsCategory .menu-product-types-container .menu a {
-        color: #248A83;
-        font-family: 'Novecento Sans Web';
-        text-transform: uppercase;
-        text-decoration: none;
-        font-size: 16px;
-        padding: 10px 0; }
+  padding: 30px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin: 0 auto;
+  width: 300px; }
+  .productsCategory a {
+    color: #248A83;
+    font-family: 'Novecento Sans Web';
+    text-transform: uppercase;
+    text-decoration: none;
+    font-size: 16px;
+    padding: 10px 0; }
 
 .singleProducts {
   display: -webkit-box;
