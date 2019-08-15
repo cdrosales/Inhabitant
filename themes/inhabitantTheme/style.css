@@ -383,6 +383,31 @@ footer {
     margin: 0 7%; }
     .journalContainer .journalPostInfo p {
       padding-bottom: 20px; }
+  .journalContainer .postBtn {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin: 10px 0 0 60px; }
+    .journalContainer .postBtn .button {
+      margin-right: 5px;
+      padding: 12px 23px;
+      background-color: #ffffff;
+      text-transform: uppercase;
+      border-color: #404040; }
+      .journalContainer .postBtn .button a {
+        color: black;
+        text-decoration: none; }
+      .journalContainer .postBtn .button i {
+        padding-right: 5px; }
+    .journalContainer .postBtn .button:hover {
+      background-color: #248A83;
+      color: #ffffff;
+      border: none; }
+      .journalContainer .postBtn .button:hover a {
+        color: #ffffff; }
   .journalContainer .readMore {
     padding: 10px 20px;
     background-color: #ffffff;
@@ -511,8 +536,8 @@ footer {
           flex-direction: row;
   padding: 40px 30px 80px 30px; }
   .singleProducts .singleProductThumbnail img {
-    width: 480px;
-    height: 300px;
+    width: 500px;
+    height: 375px;
     padding-right: 40px; }
   .singleProducts .singleProductInfo .singleProductTitle {
     font-size: 35px;
@@ -530,7 +555,7 @@ footer {
     line-height: 1.75;
     padding-bottom: 20px;
     width: 525px; }
-  .singleProducts .singleProductInfo .shopButton {
+  .singleProducts .singleProductInfo .shopBtn {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -538,22 +563,22 @@ footer {
         -ms-flex-pack: left;
             justify-content: left;
     margin: 10px 0; }
-    .singleProducts .singleProductInfo .shopButton .button {
+    .singleProducts .singleProductInfo .shopBtn .button {
       margin-right: 5px;
-      padding: 10px 20px;
+      padding: 12px 23px;
       background-color: #ffffff;
       text-transform: uppercase;
       border-color: #404040; }
-      .singleProducts .singleProductInfo .shopButton .button a {
+      .singleProducts .singleProductInfo .shopBtn .button a {
         color: black;
         text-decoration: none; }
-      .singleProducts .singleProductInfo .shopButton .button i {
+      .singleProducts .singleProductInfo .shopBtn .button i {
         padding-right: 5px; }
-    .singleProducts .singleProductInfo .shopButton .button:hover {
+    .singleProducts .singleProductInfo .shopBtn .button:hover {
       background-color: #248A83;
       color: #ffffff;
       border: none; }
-      .singleProducts .singleProductInfo .shopButton .button:hover a {
+      .singleProducts .singleProductInfo .shopBtn .button:hover a {
         color: #ffffff; }
 
 html {

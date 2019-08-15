@@ -45,8 +45,8 @@
     .singleProductThumbnail{
 
         img{
-        width: 480px;
-        height: 300px;
+        width: 500px;
+        height: 375px;
         padding-right: 40px;
         }
     }
@@ -76,14 +76,14 @@
             width: 525px;
 
         }
-        .shopButton{
+        .shopBtn{
             display: flex;
             justify-content: left;
             margin: 10px 0;
 
             .button{
                 margin-right: 5px;
-                padding: 10px 20px;
+                padding: 12px 23px;   
                 background-color:$brand-white;
                 text-transform: uppercase;
                 border-color: $brand-baseFontColor;

@@ -27,10 +27,10 @@
         <?php the_content(); ?> 
         </div>
 
-        <div class="shopButton">
-        <button class="like button"><a href="<?php the_permalink(); ?>"></a> <i class="fab fa-facebook-f"></i>Like </button>
-        <button class="tweet button"><a href="<?php the_permalink(); ?>"></a> <i class="fab fa-twitter"></i>Tweet</button>
-        <button class="pin button"><a href="<?php the_permalink(); ?>"></a> <i class="fab fa-pinterest"></i>Pin</button>
+        <div class="shopBtn">
+        <button class="like button"><a href="<?php the_permalink(); ?>"> <i class="fab fa-facebook-f"></i>Like</a> </button>
+        <button class="tweet button"><a href="<?php the_permalink(); ?>"> <i class="fab fa-twitter"></i>Tweet</a> </button>
+        <button class="pin button"><a href="<?php the_permalink(); ?>"> <i class="fab fa-pinterest"></i>Pin</a> </button>
         </div>
     </div>
 
