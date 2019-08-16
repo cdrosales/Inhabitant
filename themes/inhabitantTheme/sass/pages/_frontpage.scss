@@ -21,6 +21,16 @@
             object-fit: cover;
         }
 }
+
+.contentTitle{
+    text-align: center;
+    color: $brand-purple;
+    font-size: 40px;
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web';
+    margin: 50px 0;
+}
+
 .productIcons{
     display: flex;
     justify-content: space-around;
@@ -36,7 +46,7 @@
 
 .shopContainer{
     width: 1120px;
-    margin: 0 auto;
+    margin: 0 auto 50px auto;
     display: flex; 
     flex-direction: row;
     justify-content: space-evenly;

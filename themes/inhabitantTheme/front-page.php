@@ -19,6 +19,10 @@
         <p>No posts found</p>
 <?php endif; ?>
 
+
+<div class="contentTitle">Shop Stuff</div>
+
+
 <div class="productIcons">
 <img src="<?php echo get_template_directory_uri() . '/assets/images/product-type-icons/do.svg'; ?>" class="doStuff" />
 <img src="<?php echo get_template_directory_uri() . '/assets/images/product-type-icons/eat.svg'; ?>" class="eatStuff" />
@@ -43,8 +47,10 @@
 ?>
 </div>
 
+<div class="contentTitle">Inhabitant Journal</div>
 
 <div class="journalHomeContainer">
+
 
     <?php 
         $blogs = new WP_Query(array(
@@ -81,8 +87,6 @@
         wp_reset_postdata();
 
     ?>
-
-            <!-- <button class="readMore"><a href="<?php the_permalink(); ?>">Read More</a> <i class="fas fa-long-arrow-alt-right"></i> </button> -->
 </div>
 
 <?php get_footer(); ?>
