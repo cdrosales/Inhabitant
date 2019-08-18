@@ -2,12 +2,12 @@
 height: 100%;
 
         .menu{
-        margin: 10px 30px;
+        padding-top: 20px;
         text-transform: uppercase;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 350px;
+        width: 300px;
 
             li{
                 a{
@@ -24,12 +24,12 @@ height: 100%;
 
 .navWhite{
     .menu{
-    margin: 10px 30px;
+    padding-top: 20px;
     text-transform: uppercase;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 350px;
+    width: 300px;
 
         li{
             a{
