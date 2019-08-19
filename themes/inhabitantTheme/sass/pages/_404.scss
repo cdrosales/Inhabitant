@@ -1,0 +1,61 @@
+.error{
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    main{
+        width: 853px;
+        h1 {
+            text-transform: uppercase;
+            font-family: 'Novecento Sans Web DemiBold';
+            color: $brand-baseFontColor;
+            font-size: 35px;
+            letter-spacing: 3px;
+            margin-top: 50px;
+        }
+
+        p{
+            font-family: 'Merriweather Web Light';
+            padding: 40px 0;
+        }
+
+        h2{
+            font-family: 'Novecento Sans Web DemiBold'; 
+            font-size: 20px;
+            text-transform: uppercase;
+            padding-bottom: 20px;  
+            letter-spacing: 2px;     
+            color: $brand-purple;
+        }
+
+        .recentPosts{
+            margin-bottom: 50px;
+            .recentPostsInfo{
+                margin-bottom: 8px;
+                font-family: 'Merriweather Web Light';
+                font-size: $brand-baseFontSize;
+                a{
+                    text-decoration: none;
+                    color: $brand-green;
+                }
+
+                a:hover{
+                    color: $brand-purple; // change to dark brand-green
+                }
+            }
+        }
+
+        .categories{
+            li{
+                padding-bottom: 10px;
+                font-family: 'Merriweather Web Light';
+                a{
+                font-family: 'Merriweather Web Light';
+                font-size: $brand-baseFontSize; 
+                text-decoration: none;
+                color: $brand-green;
+                }
+            }
+        }
+    }
+}

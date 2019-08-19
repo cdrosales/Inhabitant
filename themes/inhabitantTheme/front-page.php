@@ -89,4 +89,8 @@
     ?>
 </div>
 
+
+<div class="contentTitle">Latest Adventures</div>
+
+
 <?php get_footer(); ?>

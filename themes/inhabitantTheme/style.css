@@ -318,15 +318,17 @@ footer {
       line-height: 1.75;
       color: #248A83;
       text-decoration: none; }
-  .sidebarContent .sidebar .biz-hours-class p {
-    font-family: 'Merriweather Web Light';
-    color: #404040;
-    padding-bottom: 5px; }
-    .sidebarContent .sidebar .biz-hours-class p .day-of-week {
-      font-family: 'Merriweather Web Bold';
+  .sidebarContent .sidebar .biz-hours-class {
+    margin-bottom: 10px; }
+    .sidebarContent .sidebar .biz-hours-class p {
+      font-family: 'Merriweather Web Light';
       color: #404040;
-      line-height: 1.75;
-      font-size: 14px; }
+      padding-bottom: 5px; }
+      .sidebarContent .sidebar .biz-hours-class p .day-of-week {
+        font-family: 'Merriweather Web Bold';
+        color: #404040;
+        line-height: 1.75;
+        font-size: 14px; }
 
 .contactContent .wpcf7-form label {
   font-family: 'Novecento Sans Web';
@@ -442,6 +444,17 @@ footer {
     border: none; }
     .journalContainer .readMore:hover a {
       color: #ffffff; }
+
+.categoryPageTitle {
+  font-family: 'Novecento Sans Web DemiBold';
+  font-size: 30px;
+  text-transform: uppercase;
+  padding: 25px 0;
+  letter-spacing: 2px;
+  color: #404040;
+  text-align: left;
+  width: 800px;
+  border-bottom: 1px solid #e1e1e1; }
 
 .aboutTitle {
   position: absolute;
@@ -618,7 +631,7 @@ footer {
   font-size: 40px;
   text-transform: uppercase;
   font-family: 'Novecento Sans Web';
-  margin: 50px 0; }
+  margin: 70px 0 50px 0; }
 
 .productIcons {
   display: -webkit-box;
@@ -626,10 +639,10 @@ footer {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  width: 1120px;
+  width: 1080px;
   margin: 30px auto; }
   .productIcons img {
-    width: 75px;
+    width: 240px;
     height: 75px; }
 
 .shopContainer {
@@ -660,7 +673,8 @@ footer {
       width: 240px;
       text-align: center;
       color: #404040;
-      font-family: 'Merriweather Web Light'; }
+      font-family: 'Merriweather Web Light';
+      line-height: 1.75; }
 
 .stuffBTN {
   background-color: #248A83;
@@ -713,20 +727,70 @@ footer {
       letter-spacing: 3px;
       padding: 10px 0 0 10px; }
     .journalHomeContainer .journalHomeInfo .readEntry {
-      padding: 10px 20px;
+      padding: 8px 20px;
       background-color: #ffffff;
       text-transform: uppercase;
       margin: 15px 0 10px 10px;
-      border-color: #404040; }
+      border-color: #404040;
+      font-size: 14px; }
       .journalHomeContainer .journalHomeInfo .readEntry a {
         color: black;
         text-decoration: none; }
     .journalHomeContainer .journalHomeInfo .readEntry:hover {
       background-color: #248A83;
       color: #ffffff;
-      border: none; }
+      border: none;
+      font-size: 14px; }
       .journalHomeContainer .journalHomeInfo .readEntry:hover a {
         color: #ffffff; }
+
+.error {
+  width: 1120px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  .error main {
+    width: 853px; }
+    .error main h1 {
+      text-transform: uppercase;
+      font-family: 'Novecento Sans Web DemiBold';
+      color: #404040;
+      font-size: 35px;
+      letter-spacing: 3px;
+      margin-top: 50px; }
+    .error main p {
+      font-family: 'Merriweather Web Light';
+      padding: 40px 0; }
+    .error main h2 {
+      font-family: 'Novecento Sans Web DemiBold';
+      font-size: 20px;
+      text-transform: uppercase;
+      padding-bottom: 20px;
+      letter-spacing: 2px;
+      color: #2f1339; }
+    .error main .recentPosts {
+      margin-bottom: 50px; }
+      .error main .recentPosts .recentPostsInfo {
+        margin-bottom: 8px;
+        font-family: 'Merriweather Web Light';
+        font-size: 16px; }
+        .error main .recentPosts .recentPostsInfo a {
+          text-decoration: none;
+          color: #248A83; }
+        .error main .recentPosts .recentPostsInfo a:hover {
+          color: #2f1339; }
+    .error main .categories li {
+      padding-bottom: 10px;
+      font-family: 'Merriweather Web Light'; }
+      .error main .categories li a {
+        font-family: 'Merriweather Web Light';
+        font-size: 16px;
+        text-decoration: none;
+        color: #248A83; }
 
 html {
   width: 100%; }

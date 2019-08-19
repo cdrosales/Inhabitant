@@ -120,7 +120,17 @@
     }
 }
 
-
+.categoryPageTitle {
+    font-family: 'Novecento Sans Web DemiBold'; 
+    font-size: 30px;
+    text-transform: uppercase;
+    padding: 25px 0;
+    letter-spacing: 2px;     
+    color: $brand-baseFontColor;
+    text-align: left;
+    width: 800px;
+    border-bottom: 1px solid #e1e1e1;
+}
 
 
 

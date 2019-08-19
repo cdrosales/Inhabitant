@@ -28,17 +28,17 @@
     font-size: 40px;
     text-transform: uppercase;
     font-family: 'Novecento Sans Web';
-    margin: 50px 0;
+    margin: 70px 0 50px 0;
 }
 
 .productIcons{
     display: flex;
     justify-content: space-around;
-    width: 1120px;
+    width: 1080px;
     margin: 30px auto;
 
     img{
-        width: 75px;
+        width: 240px;
         height: 75px;
     }
 }
@@ -54,11 +54,13 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
         .descriptionStuff{
             width: 240px;
             text-align: center;
             color: $brand-baseFontColor;
             font-family: 'Merriweather Web Light';
+            line-height: $brand-lineHeight;
         }
     }
 }
@@ -120,11 +122,12 @@
             padding: 10px 0 0 10px;
         }
         .readEntry{
-            padding: 10px 20px;
+            padding: 8px 20px;
             background-color:$brand-white;
             text-transform: uppercase;
             margin: 15px 0 10px 10px;
             border-color: $brand-baseFontColor;
+            font-size: 14px;
                 a{
                     color: black;
                     text-decoration: none;
@@ -134,6 +137,7 @@
                 background-color:$brand-green;
                 color: $brand-white;
                 border: none;
+                font-size: 14px;
                 a{
                     color: $brand-white;
                 }
