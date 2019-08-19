@@ -403,6 +403,19 @@ footer {
     margin: 0 7%; }
     .journalContainer .journalPostInfo p {
       padding-bottom: 20px; }
+  .journalContainer .categoryPosted {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+    margin-bottom: 20px; }
+    .journalContainer .categoryPosted p {
+      padding-right: 10px;
+      font-family: 'Novecento Sans Web';
+      color: #404040;
+      text-transform: uppercase; }
   .journalContainer .postBtn {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -447,9 +460,9 @@ footer {
 
 .categoryPageTitle {
   font-family: 'Novecento Sans Web DemiBold';
-  font-size: 30px;
+  font-size: 40px;
   text-transform: uppercase;
-  padding: 25px 0;
+  padding: 50px 0 25px 0;
   letter-spacing: 2px;
   color: #404040;
   text-align: left;
@@ -783,14 +796,16 @@ footer {
           color: #248A83; }
         .error main .recentPosts .recentPostsInfo a:hover {
           color: #2f1339; }
-    .error main .categories li {
-      padding-bottom: 10px;
-      font-family: 'Merriweather Web Light'; }
-      .error main .categories li a {
-        font-family: 'Merriweather Web Light';
-        font-size: 16px;
-        text-decoration: none;
-        color: #248A83; }
+    .error main .errorCategories {
+      margin-bottom: 40px; }
+      .error main .errorCategories li {
+        padding-bottom: 10px;
+        font-family: 'Merriweather Web Light'; }
+        .error main .errorCategories li a {
+          font-family: 'Merriweather Web Light';
+          font-size: 16px;
+          text-decoration: none;
+          color: #248A83; }
 
 html {
   width: 100%; }

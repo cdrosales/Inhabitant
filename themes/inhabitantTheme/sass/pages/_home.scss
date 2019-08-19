@@ -69,6 +69,20 @@
         }
     
     }
+
+    .categoryPosted{
+        display: flex;
+        justify-content: left;
+        margin-bottom: 20px;
+        p{
+        padding-right: 10px;
+        font-family: 'Novecento Sans Web';
+        color: $brand-baseFontColor;
+        text-transform: uppercase;
+            
+        }
+    }
+
     .postBtn{
         display: flex;
         justify-content: left;
@@ -122,9 +136,9 @@
 
 .categoryPageTitle {
     font-family: 'Novecento Sans Web DemiBold'; 
-    font-size: 30px;
+    font-size: 40px;
     text-transform: uppercase;
-    padding: 25px 0;
+    padding: 50px 0 25px 0;
     letter-spacing: 2px;     
     color: $brand-baseFontColor;
     text-align: left;
