@@ -1,11 +1,9 @@
 .sidebarContent{ 
-
     .sidebar {
-        width: 200px;
-        // height: 100%;
-        padding: 40px 25px 0 25px;
-        
-        
+        width: 225px;
+        padding: 40px 35px 0 35px;
+    
+
         aside{
         padding-bottom: 20px;
         
@@ -36,13 +34,13 @@
                         }
                     }
             }
-    
+        
 
             h2{
             font-family: 'Novecento Sans Web DemiBold'; 
             font-size: 20px;
             text-transform: uppercase;
-            padding-bottom: 15px;  
+            padding-bottom: 20px;  
             letter-spacing: 2px;     
             color: $brand-purple;
             }
@@ -52,8 +50,23 @@
             line-height: $brand-lineHeight;
             color: $brand-green;
             text-decoration: none;
+            } 
+        }
+
+        .biz-hours-class{
+            p{
+                font-family: 'Merriweather Web Light';
+                color: $brand-baseFontColor;
+                padding-bottom: 5px;
+        
+                .day-of-week{
+                    font-family: 'Merriweather Web Bold';
+                    color: $brand-baseFontColor;
+                    line-height: $brand-lineHeight;
+                    font-size: 14px;
+                    }
             }
-            
         }
     }
 }
+

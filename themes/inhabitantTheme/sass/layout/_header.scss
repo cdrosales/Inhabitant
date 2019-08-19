@@ -1,28 +1,33 @@
 .navContainer{
+    height: 50px;
     width: 1120px;
     margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 2px 0 1px 0;
+    
 
     .navLogo{
-        width: 45px;
-        height: 45px;
-    }
+        width: 50px;
+        height: 50px;
+        }
 }
 
-.navContainerWhite{
-    width: 1120px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+.header{
     border-bottom: 1px solid #e1e1e1;
-    padding: 2px;
 
-    .navLogo{
-        width: 45px;
-        height: 45px;
+    .navContainerWhite{
+        width: 1120px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    
+    
+        .navLogo{
+            width: 50px;
+            height: 50px;
+        }
     }
+
 }

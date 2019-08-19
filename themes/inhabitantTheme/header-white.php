@@ -10,6 +10,9 @@
 </head>
 <body <?php body_class();?>> <!-- dynamic body class name depends on what page its at -->
 
+<div class="header">
+
+
 <div class="navContainerWhite">
 
     
@@ -25,6 +28,10 @@
         </div>
 
 </div>
+</div>
+
+
+
 
  
 <title><?php bloginfo('title');?></title>

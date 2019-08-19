@@ -39,14 +39,13 @@
 .singleProducts{
     display: flex;
     flex-direction: row;
-    padding: 40px 30px 80px 30px;
+    margin: 40px auto 70px auto;
+    width: 1120px;
     
 
-
     .singleProductThumbnail{
-
         img{
-        width: 500px;
+        width: 550px;
         height: 375px;
         padding-right: 40px;
         }

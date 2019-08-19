@@ -99,27 +99,25 @@ table {
 body {
   font-family: 'Novecento Sans Web'; }
 
-.nav {
-  height: 100%; }
-  .nav .menu {
-    padding-top: 20px;
-    text-transform: uppercase;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -webkit-box-pack: justify;
-        -ms-flex-pack: justify;
-            justify-content: space-between;
-    width: 300px; }
-    .nav .menu li a {
-      text-decoration: none;
-      color: #ffffff; }
-    .nav .menu li a:hover {
-      color: #f0e4d1; }
+.nav .menu {
+  padding-top: 20px;
+  text-transform: uppercase;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 350px; }
+  .nav .menu li a {
+    text-decoration: none;
+    color: #ffffff; }
+  .nav .menu li a:hover {
+    color: #f0e4d1; }
 
 .navWhite .menu {
   padding-top: 20px;
@@ -134,7 +132,7 @@ body {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 300px; }
+  width: 350px; }
   .navWhite .menu li a {
     text-decoration: none;
     color: #248A83; }
@@ -179,6 +177,7 @@ body {
         color: #404040; }
 
 .navContainer {
+  height: 50px;
   width: 1120px;
   margin: 0 auto;
   display: -webkit-box;
@@ -190,30 +189,29 @@ body {
           flex-direction: row;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
-          justify-content: space-between;
-  padding: 2px 0 1px 0; }
+          justify-content: space-between; }
   .navContainer .navLogo {
-    width: 45px;
-    height: 45px; }
+    width: 50px;
+    height: 50px; }
 
-.navContainerWhite {
-  width: 1120px;
-  margin: 0 auto;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  border-bottom: 1px solid #e1e1e1;
-  padding: 2px; }
-  .navContainerWhite .navLogo {
-    width: 45px;
-    height: 45px; }
+.header {
+  border-bottom: 1px solid #e1e1e1; }
+  .header .navContainerWhite {
+    width: 1120px;
+    margin: 0 auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between; }
+    .header .navContainerWhite .navLogo {
+      width: 50px;
+      height: 50px; }
 
 h3 {
   color: #d99054;
@@ -283,8 +281,8 @@ footer {
     font-size: 16px; }
 
 .sidebarContent .sidebar {
-  width: 200px;
-  padding: 40px 25px 0 25px; }
+  width: 225px;
+  padding: 40px 35px 0 35px; }
   .sidebarContent .sidebar aside {
     padding-bottom: 20px; }
     .sidebarContent .sidebar aside .textwidget {
@@ -312,7 +310,7 @@ footer {
       font-family: 'Novecento Sans Web DemiBold';
       font-size: 20px;
       text-transform: uppercase;
-      padding-bottom: 15px;
+      padding-bottom: 20px;
       letter-spacing: 2px;
       color: #2f1339; }
     .sidebarContent .sidebar aside a {
@@ -320,6 +318,15 @@ footer {
       line-height: 1.75;
       color: #248A83;
       text-decoration: none; }
+  .sidebarContent .sidebar .biz-hours-class p {
+    font-family: 'Merriweather Web Light';
+    color: #404040;
+    padding-bottom: 5px; }
+    .sidebarContent .sidebar .biz-hours-class p .day-of-week {
+      font-family: 'Merriweather Web Bold';
+      color: #404040;
+      line-height: 1.75;
+      font-size: 14px; }
 
 .contactContent .wpcf7-form label {
   font-family: 'Novecento Sans Web';
@@ -536,9 +543,10 @@ footer {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  padding: 40px 30px 80px 30px; }
+  margin: 40px auto 70px auto;
+  width: 1120px; }
   .singleProducts .singleProductThumbnail img {
-    width: 500px;
+    width: 550px;
     height: 375px;
     padding-right: 40px; }
   .singleProducts .singleProductInfo .singleProductTitle {
