@@ -54,8 +54,14 @@
         img{
             width: 550px;
             height: 550px;
-            object-fit: cover;
-            
+            object-fit: cover; 
         }
     }
+}
+.adventuresHome{
+    width: 1120px;
+    margin: 0 auto;
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
 }

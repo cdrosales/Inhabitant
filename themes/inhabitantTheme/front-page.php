@@ -76,9 +76,9 @@
             echo '</div>';
 
             echo '<h2 class="journalHomePostTitle">';
-            echo the_title();
-            echo '</h2>';
-            echo '<button class="readEntry"><a href="the_permalink()">Read Entry</a></button>' ;
+                echo the_title();
+                echo '</h2>';
+            echo '<button class="readEntry"><a href="<?php the_permalink(); ?>">Read Entry</a></button>' ;
 
         echo '</div>';
 
@@ -91,6 +91,39 @@
 
 
 <div class="contentTitle">Latest Adventures</div>
+
+<?php 
+        $adventures = new WP_Query(array(
+            'post_type' => 'adventures', 
+            'posts_per_page' => '4', 
+            'order_by' => 'date',
+            'order' => 'ASC'
+
+        ));
+        echo '<div class="adventuresHome">';
+        while($adventures->have_posts()) :
+            
+        echo '<div class="adventuresHomeContainer">';
+
+            echo $adventures->the_post();
+
+            echo the_post_thumbnail('thumbnail');
+
+
+            echo '<div class="adventuresHomeInfo">';
+                echo the_title();
+                echo '<button class="readMore"><a href="<?php the_permalink(); ?>">Read More</a></button>';
+            echo '</div>';
+            echo '</div>';
+        
+
+
+        endwhile;
+        echo '</div>';
+
+        wp_reset_postdata();
+
+    ?>
 
 
 <?php get_footer(); ?>

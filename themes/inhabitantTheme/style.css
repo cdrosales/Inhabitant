@@ -244,6 +244,13 @@ body {
     -o-object-fit: cover;
        object-fit: cover; }
 
+.adventuresHome {
+  width: 1120px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(2, 1fr); }
+
 .navContainer {
   height: 50px;
   width: 1120px;
@@ -475,8 +482,16 @@ footer {
   .adventureMoreBtn a {
     color: #ffffff;
     font-size: 13px; }
-  .adventureMoreBtn .readMore::hover {
-    background-color: red; }
+  .adventureMoreBtn .readMore:hover {
+    background-color: #248A83;
+    color: #ffffff;
+    border: none; }
+    .adventureMoreBtn .readMore:hover a {
+      color: #ffffff; }
+
+.adventureSingleBtn {
+  width: 925px;
+  margin: -30px auto 60px auto; }
 
 .journalContainer {
   margin: 20px 0 70px 0; }
@@ -598,7 +613,7 @@ footer {
 
 .contactContent {
   width: 750px;
-  padding: 42px 50px; }
+  padding: 42px 50px 42px 0; }
   .contactContent .inhabitantMap {
     width: 770px;
     padding: 30px 0; }
@@ -845,6 +860,21 @@ footer {
       .journalHomeContainer .journalHomeInfo .readEntry:hover a {
         color: #ffffff; }
 
+.adventuresHome {
+  position: relative; }
+  .adventuresHome .adventuresHomeInfo {
+    position: absolute;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+
 .error {
   width: 1120px;
   margin: 0 auto;
@@ -952,6 +982,23 @@ footer {
       line-height: 1.3;
       padding-left: 30px;
       color: #ffffff; }
+
+.searchContent {
+  width: 750px;
+  padding: 42px 50px 42px 0; }
+  .searchContent h2 {
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web DemiBold';
+    font-size: 26px;
+    color: #248A83; }
+  .searchContent .resultsInfo {
+    font-family: 'Merriweather Web Light';
+    line-height: 1.75;
+    font-size: 16px;
+    padding: 20px 0;
+    color: #404040; }
+  .searchContent .resultsReadMore .readMore {
+    margin: 0 0 40px 0; }
 
 html {
   width: 100%; }

@@ -1,30 +1,45 @@
-<?php get_header(); ?> <!-- dont need include syntax for wordpress -->
+<?php get_header('white'); ?> <!-- dont need include syntax for wordpress -->
 
-<!-- <h1><?php bloginfo('name'); ?></h1> -->
+<section>
+
+    <main>
+
+    <div class="searchContent">
+        <?php if( have_posts() ): // have posts - checks if theres anypost available in your feed
+        while ( have_posts() ): // run as many times as many blog posts available?***
+            the_post();?> 
+
+        <h2><?php the_title(); ?></h2> 
+        
+        <div class="resultsInfo">
+        <?php echo wp_trim_words( get_the_content(), 40, ' [...]' );?>
+        </div>
+        
+        <div class="resultsReadMore">
+        <button class="readMore"><a href="<?php the_permalink(); ?>">Read More</a> <i class="fas fa-long-arrow-alt-right"></i> </button>
+        </div>
+
+        <?php endwhile; ?> 
 
 
-
-<!-- locate blog post and grab few key points via THE LOOP-->
-<!-- the while loop is the MAIN component -->
+        <?php else : ?>
+            <p>No posts found</p>
+        <?php endif; ?>
+    </div>    
+        
     
-<?php if( have_posts() ): // have posts - checks if theres anypost available in your feed
-// The WordPress Loop: loads post content
-// echo '<i class="fab fa-facebook-f"></i>';
+    </main>
+    <div class="sidebarContent">
 
-    while ( have_posts() ): // run as many times as many blog posts available?***
-        the_post();?> <!--singular not multiple -- THIS LOADS POST CONTENT***-->
-
-    <h2><?php the_title(); ?></h2> <!--customizable to what you wanna grab ex URL can be grabbbed-->
-    <!-- <h3><?php the_permalink(); ?> shows the link of the post -->
-    <?php the_content(); ?>
+        <div class="sidebar">
+        <?php dynamic_sidebar('sidebar-1'); ?>
+        </div>
+    </div>
+</section>
 
 
-    <?php endwhile; ?> <!--Loop ENDS-->
 
-    <?php the_posts_navigation(); ?> <!--only if we have way more content than shown on page-->
 
-<?php else : ?>
-        <p>No posts found</p>
-<?php endif; ?>
+
 
 <?php get_footer(); ?>

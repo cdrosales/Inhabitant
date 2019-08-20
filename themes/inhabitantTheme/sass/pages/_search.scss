@@ -1,25 +1,25 @@
-.contactContent{
+.searchContent{
     width: 750px;
     padding: 42px 50px 42px 0;
 
-    .inhabitantMap{
-        width: 770px;
-        padding: 30px 0;
-    }
     h2{
         text-transform: uppercase;
         font-family: 'Novecento Sans Web DemiBold';
         font-size: 26px;
-        padding-bottom: 20px;
-        color: $brand-purple;
+        color: $brand-green;
     }
 
-    p{
+    .resultsInfo{
         font-family: 'Merriweather Web Light';
         line-height: $brand-lineHeight;
         font-size: $brand-baseFontSize;
         padding: 20px 0;
         color: $brand-baseFontColor;
     }
-    
+    .resultsReadMore{
+        .readMore{
+            margin: 0 0 40px 0;
+        }
+    }
 }
+

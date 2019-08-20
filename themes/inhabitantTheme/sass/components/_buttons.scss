@@ -61,8 +61,17 @@ border-color: $brand-baseFontColor;
             font-size: 13px;
         }
 
-    .readMore::hover{
-        background-color: red;
+    .readMore:hover{
+        background-color:$brand-green;
+        color: $brand-white;
+        border: none;
+    a{
+        color: $brand-white;
     }
-        
+    }    
+ }
+
+ .adventureSingleBtn{
+     width: 925px;
+     margin: -30px auto 60px auto;
  }

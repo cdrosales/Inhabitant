@@ -31,10 +31,14 @@
             
                 <?php $cat =  get_the_category(); 
                     $catTitle = $cat[0]->slug;?>
+
+                <?php $tags =  get_the_tags(); 
+                $tagTitle = $tags[0]->slug;?>
+
                 
                 <div class="categoryPosted">
                     <p>Posted in <i class="fas fa-long-arrow-alt-right"></i><span class="categoryInfo"><?php print_r($catTitle); ?></span></p> 
-                    <p>Tagged in <i class="fas fa-long-arrow-alt-right"></i></p> 
+                    <p>Tagged in <i class="fas fa-long-arrow-alt-right"></i><span class="categoryInfo"><?php print_r($tagTitle); ?></span></p> 
                     
                 </div>
 
