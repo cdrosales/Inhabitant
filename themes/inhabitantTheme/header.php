@@ -18,9 +18,10 @@
 
 
     <div class ="nav">
-        <?php wp_nav_menu( array(
-            'theme_location' => 'primary'
-        )); ?>
+        <?php wp_nav_menu( array('theme_location' => 'primary')); ?>
+        <div class="header-search">
+        <?php get_search_form(); ?>
+        </div>
         </div>
 
 </div>

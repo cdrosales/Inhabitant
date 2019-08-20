@@ -29,6 +29,8 @@
                     echo wp_trim_words( get_the_content(), 50, ' [...]' );
                     ?>
             </div>
+
+            
             
 
             <button class="readMore"><a href="<?php the_permalink(); ?>">Read More</a> <i class="fas fa-long-arrow-alt-right"></i> </button>
@@ -49,7 +51,6 @@
         <?php else : ?>
             <p>No posts found</p>
     <?php endif; ?>
-
     
 
 <?php get_footer(); ?>

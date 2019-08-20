@@ -75,11 +75,17 @@
         justify-content: left;
         margin-bottom: 20px;
         p{
-        padding-right: 10px;
+        padding-right: 15px;
         font-family: 'Novecento Sans Web';
         color: $brand-baseFontColor;
         text-transform: uppercase;
-            
+            .fa-long-arrow-alt-right{
+                padding: 0 5px;
+            }
+            .categoryInfo{
+                color: $brand-green;
+            }
+    
         }
     }
 

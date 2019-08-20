@@ -1,13 +1,14 @@
 .nav{
-// height: 100%;
+    display: flex;
+    justify-content: space-between;
 
         .menu{
-    padding-top: 20px;
+        padding-top: 20px;
         text-transform: uppercase;
         display:flex;
         flex-direction: row;
         justify-content: space-between;
-        width: 350px;
+        width: 300px;
 
             li{
                 a{
@@ -19,17 +20,27 @@
                 }
             }
         }
+        .header-search{
+            padding: 18px 0 0 20px;
+            .search-toggle{
+                color: $brand-white;
+                padding-right: 10px;
+            }
+        }
 }
 
 
 .navWhite{
+    display: flex;
+    justify-content: space-between;
+
     .menu{
     padding-top: 20px;
     text-transform: uppercase;
     display:flex;
     flex-direction: row;
     justify-content: space-between;
-    width: 350px;
+    width: 300px;
 
         li{
             a{
@@ -39,6 +50,13 @@
             a:hover{
                 color: $brand-purple;
             }
+        }
+    }
+    .header-search-white{
+        padding: 18px 0 0 20px;
+        .search-toggle{
+            color: $brand-green;
+            padding-right: 10px;
         }
     }
 }

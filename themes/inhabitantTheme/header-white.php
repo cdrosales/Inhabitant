@@ -22,9 +22,10 @@
 
 
     <div class ="navWhite">
-        <?php wp_nav_menu( array(
-            'theme_location' => 'primary'
-        )); ?>
+        <?php wp_nav_menu( array('theme_location' => 'primary')); ?>
+        <div class="header-search-white">
+        <?php get_search_form(); ?>
+        </div>
         </div>
 
 </div>

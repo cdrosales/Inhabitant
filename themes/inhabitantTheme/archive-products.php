@@ -2,8 +2,6 @@
 
     <div class="shopTitle"><h1> Shop Stuff </h1> </div>
 
-
-
     <div class ="productsCategory">
         <?php 
         $terms = get_terms(array(
