@@ -230,6 +230,20 @@ body {
       .productsContainer .products .productsInfo .price {
         color: #404040; }
 
+.adventuresContainer {
+  border-top: 1px dashed #a1a1a1;
+  display: grid;
+  grid-gap: 30px;
+  grid-template-columns: 1fr 1fr;
+  padding: 45px 0;
+  width: 1120px;
+  margin: 0 auto; }
+  .adventuresContainer .adventuresThumbnail img {
+    width: 550px;
+    height: 550px;
+    -o-object-fit: cover;
+       object-fit: cover; }
+
 .navContainer {
   height: 50px;
   width: 1120px;
@@ -450,6 +464,19 @@ footer {
   border: none; }
   .readMore:hover a {
     color: #ffffff; }
+
+.adventureMoreBtn {
+  padding: 80px 0 0 30px; }
+  .adventureMoreBtn .readMore {
+    margin: -35px auto 60px auto;
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    color: #ffffff; }
+  .adventureMoreBtn a {
+    color: #ffffff;
+    font-size: 13px; }
+  .adventureMoreBtn .readMore::hover {
+    background-color: red; }
 
 .journalContainer {
   margin: 20px 0 70px 0; }
@@ -868,6 +895,15 @@ footer {
           text-decoration: none;
           color: #248A83; }
 
+.adventureMainTitle {
+  font-size: 40px;
+  font-family: 'Novecento Sans Web DemiBold';
+  text-transform: uppercase;
+  text-align: center;
+  padding: 40px 0;
+  letter-spacing: 2px;
+  color: #404040; }
+
 .adventureTitle {
   font-size: 35px;
   font-family: 'Novecento Sans Web DemiBold';
@@ -876,7 +912,7 @@ footer {
   letter-spacing: 2px;
   color: #404040;
   width: 800px;
-  margin: 40px auto 20px auto; }
+  margin: 50px auto 20px auto; }
 
 .adventureAuthor {
   font-size: 16px;
@@ -892,9 +928,30 @@ footer {
   margin: 0 auto;
   font-size: 20px; }
 
-.adventureBtn {
-  margin: -35px auto 60px auto;
-  width: 925px; }
+.adventuresThumbnail {
+  position: relative; }
+  .adventuresThumbnail .adventureInfo {
+    position: absolute;
+    top: 0;
+    padding-top: 70px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start; }
+    .adventuresThumbnail .adventureInfo .adventureCaption {
+      font-size: 50px;
+      width: 500px;
+      text-align: left;
+      font-family: 'Merriweather Web Light';
+      line-height: 1.3;
+      padding-left: 30px;
+      color: #ffffff; }
 
 html {
   width: 100%; }

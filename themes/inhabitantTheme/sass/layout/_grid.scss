@@ -37,10 +37,25 @@
             .price{
                 color: $brand-baseFontColor;
             }
-
-
         }
-
     }
-    
+}
+
+.adventuresContainer{
+    border-top: 1px dashed $brand-lightGrey;
+    display: grid;
+    grid-gap: 30px;
+    grid-template-columns: 1fr 1fr;
+    padding: 45px 0;
+    width: 1120px;
+    margin: 0 auto;
+    .adventuresThumbnail{
+       
+        img{
+            width: 550px;
+            height: 550px;
+            object-fit: cover;
+            
+        }
+    }
 }

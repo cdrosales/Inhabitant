@@ -47,3 +47,22 @@ border-color: $brand-baseFontColor;
         color: $brand-white;
     }
 }
+
+.adventureMoreBtn{
+    padding: 80px 0 0 30px;
+    .readMore{
+    margin: -35px auto 60px auto;
+    background-color: transparent;
+    border: 1px solid $brand-white;
+    color: $brand-white;
+    }
+        a{
+            color: $brand-white;
+            font-size: 13px;
+        }
+
+    .readMore::hover{
+        background-color: red;
+    }
+        
+ }

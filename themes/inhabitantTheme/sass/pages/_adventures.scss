@@ -1,32 +1,59 @@
+.adventureMainTitle{
+    font-size: 40px;
+    font-family: 'Novecento Sans Web DemiBold';
+    text-transform: uppercase;
+    text-align: center;
+    padding: 40px 0;
+    letter-spacing: 2px;
+    color: $brand-baseFontColor;
+}
+
 
 .adventureTitle{
-        font-size: 35px;
-        font-family: 'Novecento Sans Web DemiBold';
-        text-transform: uppercase;
-        text-align: left;
-        letter-spacing: 2px;
-        color: $brand-baseFontColor;
-        width: 800px;
-        margin: 40px auto 20px auto;
+    font-size: 35px;
+    font-family: 'Novecento Sans Web DemiBold';
+    text-transform: uppercase;
+    text-align: left;
+    letter-spacing: 2px;
+    color: $brand-baseFontColor;
+    width: 800px;
+    margin: 50px auto 20px auto;
 }
 
 .adventureAuthor{
-        font-size: $brand-baseFontSize;
-        font-family: 'Novecento Sans Web';
-        text-transform: uppercase;
-        text-align: left;
-        color: $brand-baseFontColor;
-        width: 800px;
-        margin: 0 auto 20px auto;
+    font-size: $brand-baseFontSize;
+    font-family: 'Novecento Sans Web';
+    text-transform: uppercase;
+    text-align: left;
+    color: $brand-baseFontColor;
+    width: 800px;
+    margin: 0 auto 20px auto;
 }
 .adventurePost{
-        width: 1120px;
-        margin: 0 auto; 
-        font-size: 20px;   
+        
+    width: 1120px;
+    margin: 0 auto; 
+    font-size: 20px;   
 }
+.adventuresThumbnail{
+    position: relative;
 
-.adventureBtn{
-   margin: -35px auto 60px auto;
-   width: 925px;
+    .adventureInfo{
+        position: absolute;
+        top: 0;
+        padding-top: 70px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
 
+        .adventureCaption{
+            font-size: 50px;
+            width: 500px;
+            text-align: left;
+            font-family: 'Merriweather Web Light';
+            line-height: 1.3;
+            padding-left: 30px;
+            color: $brand-white;
+        }
+    }
 }
