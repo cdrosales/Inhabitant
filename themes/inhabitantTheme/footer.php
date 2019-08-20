@@ -27,6 +27,7 @@
                 <li>Sunday: Closed</li>
             </ul>
             
+            
         </div>
              <img src="<?php echo get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-text.svg'; ?>" class="footerLogo" />
 

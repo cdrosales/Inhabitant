@@ -136,5 +136,28 @@ function inhabitant_register_taxonomies(){
 add_action('init', 'inhabitant_register_taxonomies');
 
 
+
+
+function inhabitant_adventures(){
+    register_post_type('adventures', array( 
+        'supports' => array('title', 'editor', 'thumbnail'),
+        'public' => true,
+        'show_in_rest' => true,
+        'has_archive' => true,
+        'labels' => array(
+            'name' => 'Adventures', 
+            'add_new_item' => 'Add New Adventure',
+            'edit_item' => 'Edit Adventure',
+            'all_items' => 'All Adventures',
+            'singular_name' => 'Adventure' 
+        ),
+
+        'menu_icon' => 'dashicons-palmtree'
+    ));
+}
+
+add_action('init', 'inhabitant_adventures');
+
+
 ?>
 
