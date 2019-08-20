@@ -407,6 +407,50 @@ footer {
   margin-bottom: 50px;
   border: none; }
 
+.postBtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+  margin: 10px 0 0 60px; }
+  .postBtn .button {
+    margin-right: 5px;
+    padding: 12px 23px;
+    background-color: #ffffff;
+    text-transform: uppercase;
+    border-color: #404040; }
+    .postBtn .button a {
+      color: black;
+      text-decoration: none; }
+    .postBtn .button i {
+      padding-right: 5px; }
+  .postBtn .button:hover {
+    background-color: #248A83;
+    color: #ffffff;
+    border: none; }
+    .postBtn .button:hover a {
+      color: #ffffff; }
+
+.readMore {
+  padding: 10px 20px;
+  background-color: #ffffff;
+  text-transform: uppercase;
+  margin-left: 6.8%;
+  margin-top: 10px;
+  border-color: #404040; }
+  .readMore a {
+    color: black;
+    text-decoration: none; }
+
+.readMore:hover {
+  background-color: #248A83;
+  color: #ffffff;
+  border: none; }
+  .readMore:hover a {
+    color: #ffffff; }
+
 .journalContainer {
   margin: 20px 0 70px 0; }
   .journalContainer .journalImage {
@@ -474,47 +518,6 @@ footer {
         padding: 0 5px; }
       .journalContainer .categoryPosted p .categoryInfo {
         color: #248A83; }
-  .journalContainer .postBtn {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-    margin: 10px 0 0 60px; }
-    .journalContainer .postBtn .button {
-      margin-right: 5px;
-      padding: 12px 23px;
-      background-color: #ffffff;
-      text-transform: uppercase;
-      border-color: #404040; }
-      .journalContainer .postBtn .button a {
-        color: black;
-        text-decoration: none; }
-      .journalContainer .postBtn .button i {
-        padding-right: 5px; }
-    .journalContainer .postBtn .button:hover {
-      background-color: #248A83;
-      color: #ffffff;
-      border: none; }
-      .journalContainer .postBtn .button:hover a {
-        color: #ffffff; }
-  .journalContainer .readMore {
-    padding: 10px 20px;
-    background-color: #ffffff;
-    text-transform: uppercase;
-    margin-left: 6.8%;
-    margin-top: 10px;
-    border-color: #404040; }
-    .journalContainer .readMore a {
-      color: black;
-      text-decoration: none; }
-  .journalContainer .readMore:hover {
-    background-color: #248A83;
-    color: #ffffff;
-    border: none; }
-    .journalContainer .readMore:hover a {
-      color: #ffffff; }
 
 .categoryPageTitle {
   font-family: 'Novecento Sans Web DemiBold';
@@ -864,6 +867,34 @@ footer {
           font-size: 16px;
           text-decoration: none;
           color: #248A83; }
+
+.adventureTitle {
+  font-size: 35px;
+  font-family: 'Novecento Sans Web DemiBold';
+  text-transform: uppercase;
+  text-align: left;
+  letter-spacing: 2px;
+  color: #404040;
+  width: 800px;
+  margin: 40px auto 20px auto; }
+
+.adventureAuthor {
+  font-size: 16px;
+  font-family: 'Novecento Sans Web';
+  text-transform: uppercase;
+  text-align: left;
+  color: #404040;
+  width: 800px;
+  margin: 0 auto 20px auto; }
+
+.adventurePost {
+  width: 1120px;
+  margin: 0 auto;
+  font-size: 20px; }
+
+.adventureBtn {
+  margin: -35px auto 60px auto;
+  width: 925px; }
 
 html {
   width: 100%; }

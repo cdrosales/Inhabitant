@@ -1,0 +1,32 @@
+
+.adventureTitle{
+        font-size: 35px;
+        font-family: 'Novecento Sans Web DemiBold';
+        text-transform: uppercase;
+        text-align: left;
+        letter-spacing: 2px;
+        color: $brand-baseFontColor;
+        width: 800px;
+        margin: 40px auto 20px auto;
+}
+
+.adventureAuthor{
+        font-size: $brand-baseFontSize;
+        font-family: 'Novecento Sans Web';
+        text-transform: uppercase;
+        text-align: left;
+        color: $brand-baseFontColor;
+        width: 800px;
+        margin: 0 auto 20px auto;
+}
+.adventurePost{
+        width: 1120px;
+        margin: 0 auto; 
+        font-size: 20px;   
+}
+
+.adventureBtn{
+   margin: -35px auto 60px auto;
+   width: 925px;
+
+}
