@@ -475,6 +475,9 @@ footer {
   width: 925px;
   margin: -30px auto 60px auto; }
 
+.dateReadMore {
+  margin-top: 20px; }
+
 .journalContainer {
   margin: 20px 0 70px 0; }
   .journalContainer .journalImage {
@@ -526,7 +529,7 @@ footer {
     .journalContainer .journalPostInfo p {
       padding-bottom: 20px; }
   .journalContainer .journalReadMore {
-    margin: 15px 0 20px 5px; }
+    margin: 30px 0 20px 5px; }
   .journalContainer .categoryPosted {
     display: -webkit-box;
     display: -ms-flexbox;

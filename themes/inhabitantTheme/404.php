@@ -60,10 +60,14 @@
         <h2>Archives</h2>
         <p>Try looking in the monthly archives. <i class="fas fa-smile"></i> </p>
 
-        <select class="archivesMenu">
-                <option value="april">April 2019</option>
-                <option value="march">March 2019</option>
+
+        <div class="archivesMenu">
+        <select name="archive-dropdown" onchange="document.location.href=this.options[this.selectedIndex].value;">
+        <option value=""><?php echo esc_attr( __( 'Select Month' ) ); ?></option> 
+        <?php wp_get_archives( array( 'type' => 'monthly', 'format' => 'option', 'show_post_count' => 1 ) ); ?>
         </select>
+        </div>
+
    
    
    
