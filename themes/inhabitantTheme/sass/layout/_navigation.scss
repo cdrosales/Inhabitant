@@ -14,6 +14,8 @@
                 a{
                     text-decoration: none;
                     color: $brand-white;
+                    text-shadow: 1px 1px $brand-mediumGrey;
+
                 }
                 a:hover{
                     color: $brand-yellow;
@@ -30,6 +32,8 @@
                 padding-top: 19px;
                 .fa-search{
                     padding-top: 19px;
+                    text-shadow: 1px 1px $brand-mediumGrey;
+
                 }
             }
             .search-toggle:hover{
@@ -113,4 +117,16 @@
     label{
         display: none;
     }
+}
+
+
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.sticky + .navWhite {
+    padding-top: 60px;
 }

@@ -25,13 +25,6 @@
 <div class="contentTitle">Shop Stuff</div>
 
 
-<div class="productIcons">
-<img src="<?php echo get_template_directory_uri() . '/assets/images/product-type-icons/do.svg'; ?>" class="doStuff" />
-<img src="<?php echo get_template_directory_uri() . '/assets/images/product-type-icons/eat.svg'; ?>" class="eatStuff" />
-<img src="<?php echo get_template_directory_uri() . '/assets/images/product-type-icons/sleep.svg'; ?>" class="sleepStuff" />
-<img src="<?php echo get_template_directory_uri() . '/assets/images/product-type-icons/wear.svg'; ?>" class="wearStuff" />
-</div>
-
 <div class="shopContainer">
 <?php 
         // echo '<h2>' . get_the_title() . '</h2>';
@@ -42,6 +35,13 @@
     
         foreach($terms as $term) :
             echo '<div class="shopInfoContainer">';
+
+            ?> 
+            <div class="productIcons">
+            <img src="<?php echo get_template_directory_uri() . '/assets/images/product-type-icons/' . $term->name . '.svg'; ?>" class="eatStuff" />
+            </div>
+            <?php
+
             echo '<div class="descriptionStuff">' . category_description($term) . '</div>';
             echo '<button class="stuffBTN">'. '<a href="' . get_term_link($term) . '" class="categoryStuff">' . '<h2>' . $term->name . ' stuff' . '</h2>' . '</a>' . '</button>';
             echo '</div>';
@@ -132,6 +132,8 @@
         wp_reset_postdata();
 
     ?>
-
+    <div class="moreAdventures">
+    <button class="adventuresBTN"> <a href="http://localhost:8888/Inhabitant/adventures/">More Adventures</a></button>
+    </div>
 
 <?php get_footer(); ?>

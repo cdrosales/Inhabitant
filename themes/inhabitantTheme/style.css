@@ -122,7 +122,8 @@ body {
     width: 300px; }
     .nav .menu li a {
       text-decoration: none;
-      color: #ffffff; }
+      color: #ffffff;
+      text-shadow: 1px 1px #808080; }
     .nav .menu li a:hover {
       color: #f0e4d1; }
   .nav .header-search {
@@ -133,7 +134,8 @@ body {
       padding-left: 15px;
       padding-top: 19px; }
       .nav .header-search .search-toggle .fa-search {
-        padding-top: 19px; }
+        padding-top: 19px;
+        text-shadow: 1px 1px #808080; }
     .nav .header-search .search-toggle:hover {
       color: #f0e4d1; }
     .nav .header-search .screen-reader-text {
@@ -198,6 +200,14 @@ body {
 
 .header-search-white label {
   display: none; }
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%; }
+
+.sticky + .navWhite {
+  padding-top: 60px; }
 
 .productsContainer {
   border-top: 1px dashed #a1a1a1;
@@ -531,6 +541,36 @@ footer {
 .dateReadMore {
   margin-top: 20px; }
 
+.moreAdventures {
+  width: 1120px;
+  margin: 0 auto 60px auto; }
+  .moreAdventures .adventuresBTN {
+    background-color: #248A83;
+    color: #ffffff;
+    border: none;
+    padding: 10px 30px; }
+    .moreAdventures .adventuresBTN a {
+      color: #ffffff;
+      text-transform: uppercase;
+      font-size: 20px;
+      text-decoration: none; }
+
+.stuffBTN {
+  background-color: #248A83;
+  border: 1px solid none;
+  padding: 10px 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px auto 10px auto; }
+  .stuffBTN a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: #ffffff; }
+
+.stuffBTN:hover {
+  background-color: #15655f; }
+
 .journalContainer {
   margin: 20px 0 70px 0; }
   .journalContainer .journalImage {
@@ -796,18 +836,6 @@ footer {
   font-family: 'Novecento Sans Web';
   margin: 70px 0 50px 0; }
 
-.productIcons {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
-  width: 1080px;
-  margin: 30px auto; }
-  .productIcons img {
-    width: 240px;
-    height: 75px; }
-
 .shopContainer {
   width: 1120px;
   margin: 0 auto 50px auto;
@@ -821,6 +849,16 @@ footer {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly; }
+  .shopContainer .productIcons {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    margin: 30px auto; }
+    .shopContainer .productIcons img {
+      width: 240px;
+      height: 75px; }
   .shopContainer .shopInfoContainer {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -831,7 +869,10 @@ footer {
             flex-direction: column;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding: 10px;
+    border: 1px solid #e1e1e1;
+    border-top-width: thick; }
     .shopContainer .shopInfoContainer .descriptionStuff {
       width: 240px;
       text-align: center;
@@ -839,21 +880,9 @@ footer {
       font-family: 'Merriweather Web Light';
       line-height: 1.75; }
 
-.stuffBTN {
-  background-color: #248A83;
-  border: 1px solid none;
-  padding: 10px 20px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin: 20px auto 10px auto; }
-  .stuffBTN a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: #ffffff; }
-
-.stuffBTN:hover {
-  background-color: black; }
+.shopInfoContainer:hover {
+  border: 1px solid #d99054;
+  border-top-width: thick; }
 
 .journalHomeContainer {
   margin: 30px auto;
