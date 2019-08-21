@@ -10,7 +10,9 @@
             <div class="heroImage"><?php the_post_thumbnail(); ?></div>
         </div>
     
-        <img src="<?php echo get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-full.svg'; ?>" class="homeLogo" />
+        <div class="homeLogo">
+        <img src="<?php echo get_template_directory_uri() . '/assets/images/logos/inhabitent-logo-full.svg'; ?>"/>
+        </div>
     </div>
 
 <?php endwhile; ?> 
