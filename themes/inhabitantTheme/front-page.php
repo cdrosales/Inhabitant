@@ -95,6 +95,8 @@
 
 <div class="contentTitle">Latest Adventures</div>
 
+
+
 <?php 
         $adventures = new WP_Query(array(
             'post_type' => 'adventures', 
@@ -103,6 +105,7 @@
             'order' => 'ASC'
 
         ));
+
         echo '<div class="adventuresHome">';
         while($adventures->have_posts()) :
             
