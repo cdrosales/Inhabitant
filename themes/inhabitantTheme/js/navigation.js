@@ -15,7 +15,7 @@
 
     $('.search-field').on('blur', function() {
       if ($(this).val() === '') {
-        $('.header-search label').animate({ width: 'hide' });
+        $('.header-search label').animate({ width: 'show' });
       }
     });
   });

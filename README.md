@@ -2,7 +2,7 @@
 
 A camping website where the theme is made from scratch via wordpress, that showcases camping products, blogs and latest adventures from the admin.
 
-##Technology Used
+## Technology Used
 
 1. PHP 
 2. JQuery
@@ -48,7 +48,7 @@ Command Line
 3. Run Gulp 
 
 
-##Takeaways 
+## Takeaways 
 
 1. Understand the layout first -- similar buttons, styles, layouts, headings, etc. Organization is key and use consistent class names instead of multiple classes with the same style/layout. 
 

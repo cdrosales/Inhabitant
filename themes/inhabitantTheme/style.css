@@ -193,6 +193,12 @@ body {
       width: 200px;
       font-size: 16px; }
 
+.header-search label {
+  display: none; }
+
+.header-search-white label {
+  display: none; }
+
 .productsContainer {
   border-top: 1px dashed #a1a1a1;
   display: grid;
