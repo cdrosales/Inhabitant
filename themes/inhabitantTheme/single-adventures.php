@@ -11,7 +11,7 @@
 
 <div class="aboutContent">
 
-    <div class="heroWrapper">
+    <div class="heroWrapperAdventures">
         
         <div class="heroImage">
         <?php the_post_thumbnail(); ?>

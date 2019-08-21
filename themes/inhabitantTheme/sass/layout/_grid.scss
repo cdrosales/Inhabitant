@@ -10,19 +10,19 @@
     .products{
        
         .productsThumbnail{
-            background-color: #DCDCDC;
+            background-color: $brand-borderGrey;
             width: 252px;
 
             img{
             width: 250px;
             height: 250px;
             object-fit: cover;
-            border: 1px solid #DCDCDC;        
+            border: 1px solid $brand-borderGrey;        
             }
         }
     
         .productsInfo{
-            border: 1px solid #DCDCDC;
+            border: 1px solid $brand-borderGrey;
             padding: 10px 5px;
             text-align: center;
             width: 240px;

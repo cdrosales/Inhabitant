@@ -2,7 +2,7 @@
     position: absolute;
     height: 100vh;
     width: 100%;
-    top: 50px;
+    top: 75px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -92,7 +92,7 @@
             img{
             width: 350px;
             height: 250px;
-            border-bottom: 5px solid $brand-lightGrey; //need to be lighter
+            border-bottom: 5px solid $brand-borderGrey; 
             }
         }
         .journalHomePostInfo{
