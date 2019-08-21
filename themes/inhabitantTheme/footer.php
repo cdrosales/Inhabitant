@@ -7,10 +7,9 @@
     <div class="footerMainContainer">
         <div class="footerContainer">
 
-        <?php dynamic_sidebar('sidebar-1'); ?>
 
-            <!-- <ul class="footerInhabitantInfo">
-                <li><h3>Contact Info</h3></li>
+            <ul class="footerInhabitantInfo">
+                <h2>Contact Info</h2>
                 <li><i class="fas fa-envelope"></i>Info@inhabitant.com</li>
                 <li><i class="fas fa-phone-alt"></i>778-456-7891</li>
                 <li> 
@@ -22,12 +21,9 @@
                 </li>
             </ul>
 
-            <ul class="footerHours">
-                <li><h3>Business Hours</h3></li>
-                <li>Monday-Friday: 9am to 5pm</li>
-                <li>Saturday: 10am to 2pm</li>
-                <li>Sunday: Closed</li>
-            </ul> -->
+        <?php dynamic_sidebar('sidebar-1'); ?>
+
+
             
             
         </div>

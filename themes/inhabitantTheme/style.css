@@ -279,12 +279,6 @@ body {
       width: 50px;
       height: 50px; }
 
-h3 {
-  color: #d99054;
-  text-transform: uppercase;
-  font-family: 'Novecento Sans Web DemiBold';
-  letter-spacing: 2px; }
-
 footer {
   background: url("assets/images/dark-wood.png"); }
   footer .footerMainContainer {
@@ -310,17 +304,22 @@ footer {
       -webkit-box-pack: justify;
           -ms-flex-pack: justify;
               justify-content: space-between; }
+      footer .footerMainContainer .footerContainer h2 {
+        color: #d99054;
+        text-transform: uppercase;
+        font-family: 'Novecento Sans Web DemiBold';
+        letter-spacing: 2px;
+        font-size: 18px; }
+      footer .footerMainContainer .footerContainer li, footer .footerMainContainer .footerContainer p {
+        color: #ffffff;
+        font-size: 16px;
+        font-family: 'Merriweather Web Light';
+        line-height: 2.5; }
       footer .footerMainContainer .footerContainer .footerInhabitantInfo {
-        color: #ffffff; }
-        footer .footerMainContainer .footerContainer .footerInhabitantInfo li {
-          font-family: 'Merriweather Web Light';
-          text-transform: lowercase;
-          padding-right: 3px; }
-          footer .footerMainContainer .footerContainer .footerInhabitantInfo li i {
-            padding-right: 4px; }
+        margin-right: 50px; }
+        footer .footerMainContainer .footerContainer .footerInhabitantInfo i {
+          padding-right: 10px; }
         footer .footerMainContainer .footerContainer .footerInhabitantInfo .socialMediaIcons {
-          color: #ffffff;
-          width: 60px;
           display: -webkit-box;
           display: -ms-flexbox;
           display: flex;
@@ -328,13 +327,14 @@ footer {
           -webkit-box-direction: normal;
               -ms-flex-direction: row;
                   flex-direction: row;
+          width: 50px;
           -webkit-box-pack: justify;
               -ms-flex-pack: justify;
                   justify-content: space-between; }
-      footer .footerMainContainer .footerContainer .footerHours {
-        padding-left: 50px;
-        color: #ffffff;
-        text-transform: lowercase; }
+      footer .footerMainContainer .footerContainer .widget_text {
+        display: none; }
+      footer .footerMainContainer .footerContainer .widget_archive, footer .footerMainContainer .footerContainer .sidebarAddress, footer .footerMainContainer .footerContainer .fa-map-marker-alt {
+        display: none; }
     footer .footerMainContainer .footerLogo {
       width: 250px;
       height: 262px;
@@ -367,7 +367,7 @@ footer {
           padding-right: 10px;
           padding-top: 5px;
           color: #404040; }
-        .sidebarContent .sidebar aside .textwidget ul li p {
+        .sidebarContent .sidebar aside .textwidget ul li span {
           line-height: 1.75;
           color: #404040; }
         .sidebarContent .sidebar aside .textwidget ul li .sidebarNumber, .sidebarContent .sidebar aside .textwidget ul li .sidebarEmail {

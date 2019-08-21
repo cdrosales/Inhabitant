@@ -1,9 +1,4 @@
-h3 {
-    color: $brand-orange;
-    text-transform: uppercase;
-    font-family: 'Novecento Sans Web DemiBold';
-    letter-spacing: 2px;
-}
+
 
 footer{
     background: url("assets/images/dark-wood.png");
@@ -22,31 +17,43 @@ footer{
             flex-direction: row;
             justify-content: space-between;
 
-            .footerInhabitantInfo{
-                color: $brand-white;
-                
-                li{
-                    font-family: 'Merriweather Web Light'; 
-                    text-transform: lowercase;
-                    padding-right: 3px;
-
-                    i{
-                        padding-right: 4px;
-                    }
+                h2 {
+                    color: $brand-orange;
+                    text-transform: uppercase;
+                    font-family: 'Novecento Sans Web DemiBold';
+                    letter-spacing: 2px;
+                    font-size: 18px;
                 }
-                    .socialMediaIcons{
+
+                li, p{
                     color: $brand-white;
-                        width: 60px;
+                    font-size: $brand-baseFontSize;
+                    font-family: 'Merriweather Web Light';
+                    line-height: 2.5;
+                }
+
+                .footerInhabitantInfo{
+                    margin-right: 50px;
+                    i{
+                        padding-right: 10px;
+                    }
+                    .socialMediaIcons{
                         display: flex;
                         flex-direction: row;
+                        width: 50px;
                         justify-content: space-between;
                     }
-            }
-            .footerHours{
-            padding-left: 50px;
-            color: $brand-white;
-            text-transform: lowercase;
-            }
+                }
+
+                .widget_text{
+                    display: none;
+                }
+
+                .widget_archive, .sidebarAddress, .fa-map-marker-alt{
+                    display: none;
+                }
+           
+            
         }
         .footerLogo{
             width: 250px;
