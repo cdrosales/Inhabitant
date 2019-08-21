@@ -78,8 +78,9 @@
             echo '<h2 class="journalHomePostTitle">';
                 echo the_title();
                 echo '</h2>';
-            echo '<button class="readEntry"><a href="<?php the_permalink(); ?>">Read Entry</a></button>' ;
-
+                ?> 
+                <button class="readEntry"><a href="<?php the_permalink(); ?>">Read Entry</a></button>
+                <?php
         echo '</div>';
 
         endwhile;
@@ -112,8 +113,10 @@
 
             echo '<div class="adventuresHomeInfo">';
                 echo the_title();
-                echo '<button class="readMore"><a href="<?php the_permalink(); ?>">Read More</a></button>';
-            echo '</div>';
+                ?>
+                <button class="readMore"><a href="<?php the_permalink(); ?>">Read More</a></button>
+                <?php
+                echo '</div>';
             echo '</div>';
         
 

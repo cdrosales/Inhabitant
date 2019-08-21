@@ -43,11 +43,9 @@
                 </div>
 
 
-                <div class="postBtn">
                 <button class="like button"><a href="http://www.facebook.com"></a> <i class="fab fa-facebook-f"></i>Like </button>
                 <button class="tweet button"><a href="http://www.twitter.com"></a> <i class="fab fa-twitter"></i>Tweet</button>
                 <button class="pin button"><a href="http://www.pinterest.com"></a> <i class="fab fa-pinterest"></i>Pin</button>
-                </div>
          
             <?php endwhile; ?>  
 

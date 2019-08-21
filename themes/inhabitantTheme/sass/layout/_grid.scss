@@ -1,16 +1,13 @@
 .productsContainer{ 
     border-top: 1px dashed $brand-lightGrey;
     display: grid;
+    grid-gap: 36px;
     grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 20px 0;
+    padding: 40px 0 75px 0;
     width: 1120px;
     margin: 0 auto;
 
     .products{
-        display: flex;
-        flex-direction: column;
-        padding: 15px 0;
-        margin: 0 auto;
        
         .productsThumbnail{
             background-color: #DCDCDC;

@@ -3,6 +3,8 @@
 <section>
 
     <main>
+<div class="searchPageTitle"> Search results for: </div>
+
 
     <div class="searchContent">
         <?php if( have_posts() ): // have posts - checks if theres anypost available in your feed

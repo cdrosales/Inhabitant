@@ -38,9 +38,9 @@
                     ?>
             </div>
             
-
+            <div class="journalReadMore">
             <button class="readMore"><a href="<?php the_permalink(); ?>">Read More</a> <i class="fas fa-long-arrow-alt-right"></i> </button>
-
+            </div>
 
 
 
