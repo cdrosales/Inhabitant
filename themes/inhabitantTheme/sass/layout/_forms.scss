@@ -5,9 +5,9 @@
         text-transform: uppercase;
 
             .wpcf7-form-control{
-                background-color: $brand-lightGrey;
                 opacity: 0.1; 
-                border-color: black;
+                background-color: $brand-lightGrey;
+                border-color: $brand-borderGrey;
                 border-width: 1px;
                 width: 350px;
                 height: 30px;
@@ -30,3 +30,63 @@
         
     }
 }
+
+
+
+.commentContainer{
+    h1{
+        font-size: 30px;
+        font-family: 'Novecento Sans Web DemiBold';
+        text-transform: uppercase;
+        color: $brand-baseFontColor;
+        margin: 75px 0 40px 0;
+    }
+
+    p{
+        font-family: 'Merriweather Web Light';
+        color: $brand-baseFontColor;
+        font-size: $brand-baseFontSize;
+    }
+
+    .comment-respond{
+         h3, .logged-in-as{
+             display: none;
+         }
+        margin: 20px 0 60px 0;
+
+         .comment-form-comment{
+             display: flex;
+             flex-direction: column;
+                label{
+                    padding-bottom: 20px;
+                    text-transform: uppercase;
+                    color: $brand-purple;
+                    font-family: 'Novecento Sans Web';
+
+                }
+         }
+         #comment{
+             width: 750px;
+             height: 250px;
+             background-color: #f4f4f4;
+             border: 1px solid $brand-borderGrey;
+             margin-bottom: 25px;
+         }
+         .form-submit{
+             
+            .submit{
+            background-color: $brand-green;
+            padding: 7px 15px;
+            color: $brand-white;
+            text-transform: uppercase;
+            font-family: 'Novecento Sans Web';
+            margin-bottom: 50px;
+            border: none;
+             }
+         }
+
+    }
+}
+
+
+

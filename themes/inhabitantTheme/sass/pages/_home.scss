@@ -15,7 +15,7 @@
     }
 
 
-    .journalTitle{
+    .journalTitle, .journalSingleTitle{
     position: absolute;
     font-family: 'Novecento Sans Web DemiBold';
     color: $brand-white;
@@ -104,7 +104,6 @@
     width: 800px;
     border-bottom: 1px solid $brand-borderGrey;
 }
-
 
 
 

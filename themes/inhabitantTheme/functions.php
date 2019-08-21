@@ -158,5 +158,8 @@ function inhabitant_adventures(){
 
 add_action('init', 'inhabitant_adventures');
 
+
+
+
 ?>
 

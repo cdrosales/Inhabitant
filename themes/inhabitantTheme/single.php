@@ -13,7 +13,7 @@
                 
                 <div class="journalImage"><?php the_post_thumbnail('large'); ?></div>
 
-                <div class="journalTitle"><?php the_title(); ?></div>
+                <div class="journalSingleTitle"><?php the_title(); ?></div>
 
                 <div class="postData">
 
@@ -47,7 +47,21 @@
                 <button class="tweet button"><a href="http://www.twitter.com"></a> <i class="fab fa-twitter"></i>Tweet</button>
                 <button class="pin button"><a href="http://www.pinterest.com"></a> <i class="fab fa-pinterest"></i>Pin</button>
          
-            <?php endwhile; ?>  
+            <?php endwhile; ?> 
+            
+      
+            <div class="commentContainer">
+
+
+            <h1> Post a comment</h1>
+            <p> Want to join the discussion? Feel free to contribute!</p>
+        
+            <?php comment_form(); ?>
+
+
+        
+
+     
 
      </div>
 
@@ -72,3 +86,5 @@
     
 
 <?php get_footer(); ?>
+
+

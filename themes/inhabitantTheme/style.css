@@ -315,6 +315,8 @@ footer {
         font-size: 16px;
         font-family: 'Merriweather Web Light';
         line-height: 2.5; }
+      footer .footerMainContainer .footerContainer li {
+        text-transform: lowercase; }
       footer .footerMainContainer .footerContainer .footerInhabitantInfo {
         margin-right: 50px; }
         footer .footerMainContainer .footerContainer .footerInhabitantInfo i {
@@ -400,9 +402,9 @@ footer {
   font-family: 'Novecento Sans Web';
   text-transform: uppercase; }
   .contactContent .wpcf7-form label .wpcf7-form-control {
-    background-color: #a1a1a1;
     opacity: 0.1;
-    border-color: black;
+    background-color: #a1a1a1;
+    border-color: #e1e1e1;
     border-width: 1px;
     width: 350px;
     height: 30px; }
@@ -418,6 +420,50 @@ footer {
   font-family: 'Novecento Sans Web';
   margin-bottom: 50px;
   border: none; }
+
+.commentContainer h1 {
+  font-size: 30px;
+  font-family: 'Novecento Sans Web DemiBold';
+  text-transform: uppercase;
+  color: #404040;
+  margin: 75px 0 40px 0; }
+
+.commentContainer p {
+  font-family: 'Merriweather Web Light';
+  color: #404040;
+  font-size: 16px; }
+
+.commentContainer .comment-respond {
+  margin: 20px 0 60px 0; }
+  .commentContainer .comment-respond h3, .commentContainer .comment-respond .logged-in-as {
+    display: none; }
+  .commentContainer .comment-respond .comment-form-comment {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column; }
+    .commentContainer .comment-respond .comment-form-comment label {
+      padding-bottom: 20px;
+      text-transform: uppercase;
+      color: #2f1339;
+      font-family: 'Novecento Sans Web'; }
+  .commentContainer .comment-respond #comment {
+    width: 750px;
+    height: 250px;
+    background-color: #f4f4f4;
+    border: 1px solid #e1e1e1;
+    margin-bottom: 25px; }
+  .commentContainer .comment-respond .form-submit .submit {
+    background-color: #248A83;
+    padding: 7px 15px;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-family: 'Novecento Sans Web';
+    margin-bottom: 50px;
+    border: none; }
 
 .button {
   margin-right: 5px;
@@ -488,7 +534,7 @@ footer {
       height: 510px;
       left: 7px;
       margin: 30px 0; }
-  .journalContainer .journalTitle {
+  .journalContainer .journalTitle, .journalContainer .journalSingleTitle {
     position: absolute;
     font-family: 'Novecento Sans Web DemiBold';
     color: #ffffff;
@@ -500,7 +546,7 @@ footer {
     padding: 10px;
     margin-left: 7px;
     margin-top: -500px; }
-    .journalContainer .journalTitle a {
+    .journalContainer .journalTitle a, .journalContainer .journalSingleTitle a {
       text-decoration: none;
       color: #ffffff; }
   .journalContainer .journalTitle:hover {
