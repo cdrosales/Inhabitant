@@ -1,3 +1,21 @@
+.errorSearch{
+    font-size: $brand-baseFontSize;
+    .search-toggle, .screen-reader-text{
+        display: none;
+    }
+    .search-field{
+        background-color: $brand-borderGrey;
+        border: $brand-mediumGrey;
+        width: 225px;
+        padding: 10px 0 10px 10px;
+        font-size: $brand-baseFontSize;
+        font-family: 'Merriweather Web Light';
+        margin-bottom: 30px;
+    }
+
+}   
+
+
 .error{
     width: 1120px;
     margin: 0 auto;
@@ -11,19 +29,20 @@
             color: $brand-baseFontColor;
             font-size: 35px;
             letter-spacing: 3px;
-            margin-top: 50px;
+            margin: 50px 0 25px 0;
         }
 
         p{
             font-family: 'Merriweather Web Light';
-            padding: 40px 0;
+            color: $brand-baseFontColor;
+            margin-bottom: 30px;
         }
 
         h2{
             font-family: 'Novecento Sans Web DemiBold'; 
-            font-size: 20px;
+            font-size: 24px;
             text-transform: uppercase;
-            padding-bottom: 20px;  
+            padding-bottom: 25px;  
             letter-spacing: 2px;     
             color: $brand-purple;
         }
@@ -60,4 +79,15 @@
             }
         }
     }
+}
+
+.fa-smile{
+    color:	#FFD12A;
+    background-color: #654321;
+    border-radius: 15px;
+}
+
+.archivesMenu{
+    margin-bottom: 50px;
+    font-size: $brand-baseFontSize;
 }

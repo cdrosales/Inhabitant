@@ -866,6 +866,19 @@ footer {
         -ms-flex-align: start;
             align-items: flex-start; }
 
+.errorSearch {
+  font-size: 16px; }
+  .errorSearch .search-toggle, .errorSearch .screen-reader-text {
+    display: none; }
+  .errorSearch .search-field {
+    background-color: #e1e1e1;
+    border: #808080;
+    width: 225px;
+    padding: 10px 0 10px 10px;
+    font-size: 16px;
+    font-family: 'Merriweather Web Light';
+    margin-bottom: 30px; }
+
 .error {
   width: 1120px;
   margin: 0 auto;
@@ -883,15 +896,16 @@ footer {
       color: #404040;
       font-size: 35px;
       letter-spacing: 3px;
-      margin-top: 50px; }
+      margin: 50px 0 25px 0; }
     .error main p {
       font-family: 'Merriweather Web Light';
-      padding: 40px 0; }
+      color: #404040;
+      margin-bottom: 30px; }
     .error main h2 {
       font-family: 'Novecento Sans Web DemiBold';
-      font-size: 20px;
+      font-size: 24px;
       text-transform: uppercase;
-      padding-bottom: 20px;
+      padding-bottom: 25px;
       letter-spacing: 2px;
       color: #2f1339; }
     .error main .recentPosts {
@@ -915,6 +929,15 @@ footer {
           font-size: 16px;
           text-decoration: none;
           color: #248A83; }
+
+.fa-smile {
+  color: #FFD12A;
+  background-color: #654321;
+  border-radius: 15px; }
+
+.archivesMenu {
+  margin-bottom: 50px;
+  font-size: 16px; }
 
 .heroWrapperAdventures {
   height: 100vh;

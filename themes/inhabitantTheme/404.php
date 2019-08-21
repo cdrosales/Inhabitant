@@ -6,6 +6,9 @@
         <h1> Oops! That page can't be found. </h1>
         <p>It looks like nothing was found at this location. Maybe try one of the links below or a search?</p>
    
+        <div class="errorSearch">
+        <?php get_search_form(); ?>
+        </div>
    
         
         <h2>Recent Posts</h2>
@@ -55,8 +58,12 @@
 
 
         <h2>Archives</h2>
+        <p>Try looking in the monthly archives. <i class="fas fa-smile"></i> </p>
 
-
+        <select class="archivesMenu">
+                <option value="april">April 2019</option>
+                <option value="march">March 2019</option>
+        </select>
    
    
    
