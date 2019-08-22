@@ -58,7 +58,107 @@
 .adventuresHome{
     width: 1120px;
     margin: 0 auto;
-    display:grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-template-rows: repeat(2, 1fr);
+    display: flex;
+    flex-direction : row;
+    flex-wrap: wrap;
+ 
+        .canoe-girl{
+            width: 540px;
+            height: 550px;
+            background: linear-gradient(
+            rgba(0,0,0,0.35) 0%,
+            rgba(0,0,0,0.35) 100%);
+            img{
+                position: relative;
+                height: 550px;
+                width: 540px;
+                object-fit: cover;
+                z-index: -1;
+            }
+            .adventuresHomeInfo{
+                font-family: 'Merriweather Web Light';
+                font-size: 46px;
+                line-height: 1.5;
+                color: $brand-white;
+                width: 500px;
+                margin-top: -525px;
+                margin-left: 25px;
+            }
+        }
+
+        .beach-bonfire{
+            width: 545px;
+            height:275px;
+            margin-left: 10px;
+            background: linear-gradient(
+            rgba(0,0,0,0.35) 0%,
+            rgba(0,0,0,0.35) 100%);
+            img{
+                position: relative;                
+                width: 545px;
+                height: 275px;
+                object-fit: cover;
+                z-index: -1;
+            }
+            .adventuresHomeInfo{
+                font-family: 'Merriweather Web Light';
+                font-size: 44px;
+                line-height: 1.5;
+                color: $brand-white;
+                width: 500px;
+                margin-top: -250px;
+                margin-left: 25px;
+            }
+        }
+        .mountain-hikers{
+            width: 265px;
+            height: 265px;
+            margin-top: -267px;
+            margin-left: 550px;
+            background: linear-gradient(
+            rgba(0,0,0,0.35) 0%,
+            rgba(0,0,0,0.35) 100%);
+            img{
+                position: relative;                
+                width: 265px;
+                height: 265px;
+                object-fit: cover;
+                z-index: -1;
+            }
+            .adventuresHomeInfo{
+                font-family: 'Merriweather Web Light';
+                font-size: 27px;
+                line-height: 1.5;
+                color: $brand-white;
+                width: 200px;
+                margin-top: -225px;
+                margin-left: 25px;
+            }
+        }
+        .night-sky{
+            width: 265px;
+            height: 265px;
+            margin-top: -267px;
+            margin-left: 15px;
+            background: linear-gradient(
+            rgba(0,0,0,0.35) 0%,
+            rgba(0,0,0,0.35) 100%);
+
+            img{
+                position: relative;                
+                width: 265px;
+                height: 265px;
+                object-fit: cover;
+                z-index: -1;
+            }
+            .adventuresHomeInfo{
+                font-family: 'Merriweather Web Light';
+                font-size: 27px;
+                line-height: 1.5;
+                color: $brand-white;
+                width: 200px;
+                margin-top: -225px;
+                margin-left: 25px;
+            }
+        }
 }

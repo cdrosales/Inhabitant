@@ -254,9 +254,100 @@ body {
 .adventuresHome {
   width: 1120px;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-rows: repeat(2, 1fr); }
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .adventuresHome .canoe-girl {
+    width: 540px;
+    height: 550px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35)));
+    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%); }
+    .adventuresHome .canoe-girl img {
+      position: relative;
+      height: 550px;
+      width: 540px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      z-index: -1; }
+    .adventuresHome .canoe-girl .adventuresHomeInfo {
+      font-family: 'Merriweather Web Light';
+      font-size: 46px;
+      line-height: 1.5;
+      color: #ffffff;
+      width: 500px;
+      margin-top: -525px;
+      margin-left: 25px; }
+  .adventuresHome .beach-bonfire {
+    width: 545px;
+    height: 275px;
+    margin-left: 10px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35)));
+    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%); }
+    .adventuresHome .beach-bonfire img {
+      position: relative;
+      width: 545px;
+      height: 275px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      z-index: -1; }
+    .adventuresHome .beach-bonfire .adventuresHomeInfo {
+      font-family: 'Merriweather Web Light';
+      font-size: 44px;
+      line-height: 1.5;
+      color: #ffffff;
+      width: 500px;
+      margin-top: -250px;
+      margin-left: 25px; }
+  .adventuresHome .mountain-hikers {
+    width: 265px;
+    height: 265px;
+    margin-top: -267px;
+    margin-left: 550px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35)));
+    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%); }
+    .adventuresHome .mountain-hikers img {
+      position: relative;
+      width: 265px;
+      height: 265px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      z-index: -1; }
+    .adventuresHome .mountain-hikers .adventuresHomeInfo {
+      font-family: 'Merriweather Web Light';
+      font-size: 27px;
+      line-height: 1.5;
+      color: #ffffff;
+      width: 200px;
+      margin-top: -225px;
+      margin-left: 25px; }
+  .adventuresHome .night-sky {
+    width: 265px;
+    height: 265px;
+    margin-top: -267px;
+    margin-left: 15px;
+    background: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.35)), to(rgba(0, 0, 0, 0.35)));
+    background: linear-gradient(rgba(0, 0, 0, 0.35) 0%, rgba(0, 0, 0, 0.35) 100%); }
+    .adventuresHome .night-sky img {
+      position: relative;
+      width: 265px;
+      height: 265px;
+      -o-object-fit: cover;
+         object-fit: cover;
+      z-index: -1; }
+    .adventuresHome .night-sky .adventuresHomeInfo {
+      font-family: 'Merriweather Web Light';
+      font-size: 27px;
+      line-height: 1.5;
+      color: #ffffff;
+      width: 200px;
+      margin-top: -225px;
+      margin-left: 25px; }
 
 .navContainer {
   height: 50px;
@@ -543,7 +634,7 @@ footer {
 
 .moreAdventures {
   width: 1120px;
-  margin: 0 auto 60px auto; }
+  margin: 35px auto 60px auto; }
   .moreAdventures .adventuresBTN {
     background-color: #248A83;
     color: #ffffff;
@@ -554,6 +645,8 @@ footer {
       text-transform: uppercase;
       font-size: 20px;
       text-decoration: none; }
+  .moreAdventures .adventuresBTN:hover {
+    background-color: #15655f; }
 
 .stuffBTN {
   background-color: #248A83;
@@ -570,6 +663,19 @@ footer {
 
 .stuffBTN:hover {
   background-color: #15655f; }
+
+.adventuresHomeInfo .readMore {
+  margin-top: 15px;
+  background-color: transparent;
+  border-color: #ffffff;
+  padding: 12px 25px; }
+  .adventuresHomeInfo .readMore a {
+    color: #ffffff;
+    font-size: 16px; }
+
+.adventuresHomeInfo .readMore:hover {
+  background-color: #248A83;
+  border: none; }
 
 .journalContainer {
   margin: 20px 0 70px 0; }
@@ -649,7 +755,7 @@ footer {
   letter-spacing: 2px;
   color: #404040;
   text-align: left;
-  width: 800px;
+  width: 760px;
   border-bottom: 1px solid #e1e1e1; }
 
 .aboutTitle {

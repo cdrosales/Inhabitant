@@ -109,22 +109,27 @@
         echo '<div class="adventuresHome">';
         while($adventures->have_posts()) :
             
-        echo '<div class="adventuresHomeContainer">';
+        // echo '<div class="adventuresHomeContainer">';
 
             echo $adventures->the_post();
 
-            echo the_post_thumbnail('thumbnail');
+            echo '<div class="'. get_post(get_post_thumbnail_id())->post_title . '">';
+            echo the_post_thumbnail('medium_large');
 
 
             echo '<div class="adventuresHomeInfo">';
-                echo the_title();
+                echo '<p>';
+                echo the_title() ;
+                echo '</p>';
                 ?>
                 <button class="readMore"><a href="<?php the_permalink(); ?>">Read More</a></button>
                 <?php
                 echo '</div>';
             echo '</div>';
+            
+            // echo '</54div>';
         
-
+            
 
         endwhile;
         echo '</div>';
