@@ -3,83 +3,15 @@
 <?php  
 
 
-// get category names and links for products 
 $terms = get_terms(array(
     'taxonomy' => 'product-type',
     'hide_empty' => 0 
 ));
 
-// print_r($terms); 
-
-// print_r($terms[0]->name); 
-
-// echo $terms[0]->name;
-
-
 foreach($terms as $term) :
-
-
-    // echo $term->name;
-    // echo '<a href="' . get_term_link($term) . '">' . $term->name . '</a>';
 
 endforeach;
 
-
-
-//custom wordpress loop to display atleast 3 blogs
-
-// $args =array(
-//     'post_type'=> 'post',
-//     'numberposts' => 3,
-//     'order' => 'ASC'
-// );
-
-// // print_r(get_posts($args));
-// $posts = get_posts($args);
-//     setup_postdata($posts);
-//     the_title();
-//     the_content();
-// foreach ($posts as $post) :
-
-// endforeach;
-
-
-
-// $args =array(
-//     'taxonomy' => 'product-type',
-// );
-
-// // print_r(get_posts($args));
-// $posts = get_posts($args);
-//     setup_postdata($posts);
-//      echo $Posts->name;
-// foreach ($posts as $post) :
-
-// endforeach;
-//wp_reset_postdata();
-
-
-// custom loops using wp_query
-
-// $blogs = new WP_Query(array(
-//     'post_type' => 'products', // 'producst' -- grab taxonomies
-//     'posts_per_page' => '4', //-1 will display everything
-//     'order_by' => 'date',
-//     'order' => 'ASC'
-
-// ));
-
-// while($blogs->have_posts()) :
-//     echo $blogs->the_post();
-//     echo '<br>';
-//     echo '<h2>' . the_title() . '</h2>';
-
-// endwhile;
-
-// wp_reset_postdata();
-
-
-// 
 ?>
 
 

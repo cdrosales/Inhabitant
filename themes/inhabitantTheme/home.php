@@ -1,19 +1,15 @@
 <?php get_header('white'); ?> 
 
-    <!-- <h1><?php bloginfo('name'); ?></h1> -->
 
-    
-    <section>
+<section>
 
 <main>
     <div class="journalContainer">
             <?php if( have_posts() ): 
 
-            while ( have_posts() ):   //runs the loop
-                the_post();?>   <!-- grab info to post -->
+            while ( have_posts() ): 
+                the_post();?> 
             
-  
-    
                 
                 <div class="journalImage"><?php the_post_thumbnail('large'); ?></div>
 
@@ -29,9 +25,6 @@
                     </p>
                 </div>
   
-
-            
-
             <div class="journalPostInfo">
                 <?php
                     echo wp_trim_words( get_the_content(), 50, ' [...]' );
@@ -47,9 +40,8 @@
 
 
             <?php endwhile; ?>  
-       <!-- loop ends -->
             </div>
-</main>
+    </main>
 
         
 
@@ -58,7 +50,7 @@
             <?php dynamic_sidebar('sidebar-1'); ?>
             </div>
         </div>
-    </section>    
+ </section>    
 
 
         <?php the_posts_navigation(); ?> 

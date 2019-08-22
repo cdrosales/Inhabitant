@@ -1,4 +1,4 @@
-<?php get_header('white'); ?> <!-- dont need include syntax for wordpress -->
+<?php get_header('white'); ?> 
 
 <section>
 
@@ -7,8 +7,8 @@
 
 
     <div class="searchContent">
-        <?php if( have_posts() ): // have posts - checks if theres anypost available in your feed
-        while ( have_posts() ): // run as many times as many blog posts available?***
+        <?php if( have_posts() ): 
+        while ( have_posts() ): 
             the_post();?> 
 
         <h2><?php the_title(); ?></h2> 
@@ -22,7 +22,6 @@
         </div>
 
         <?php endwhile; ?> 
-
 
         <?php else : ?>
             <p>No posts found</p>
@@ -38,10 +37,5 @@
         </div>
     </div>
 </section>
-
-
-
-
-
 
 <?php get_footer(); ?>

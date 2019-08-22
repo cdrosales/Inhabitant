@@ -7,7 +7,6 @@
         the_post();?>  
 
    
- 
 
 <div class="aboutContent">
 

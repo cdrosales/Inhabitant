@@ -1,4 +1,4 @@
-<?php get_header('white'); ?> <!-- dont need include syntax for wordpress -->
+<?php get_header('white'); ?> 
 
 
 <section class="error">

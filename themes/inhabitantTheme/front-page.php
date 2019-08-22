@@ -27,7 +27,6 @@
 
 <div class="shopContainer">
 <?php 
-        // echo '<h2>' . get_the_title() . '</h2>';
         $terms = get_terms(array(
             'taxonomy' => 'product-type',
             'hide_empty' => 0 
@@ -109,7 +108,6 @@
         echo '<div class="adventuresHome">';
         while($adventures->have_posts()) :
             
-        // echo '<div class="adventuresHomeContainer">';
 
             echo $adventures->the_post();
 
@@ -125,10 +123,7 @@
                 <button class="readMore"><a href="<?php the_permalink(); ?>">Read More</a></button>
                 <?php
                 echo '</div>';
-            echo '</div>';
-            
-            // echo '</54div>';
-        
+            echo '</div>';        
             
 
         endwhile;
